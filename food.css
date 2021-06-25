@@ -1,0 +1,155 @@
+/*Medium devices (mobile/tablette, 768px and up)si la largeur de l'appareil est inférieure ou égale à 768px, appliquez le CSS défini 
+dans ce bloc*/
+@media only screen and (max-width:768px)
+{
+
+body /*pour que l'ordi ne mette pas une marge en plus sur toute la page*/
+{
+	margin: 0;
+	
+}
+
+
+ .fas.fa-map-marker-alt /*icone recherche*/
+{
+ 	background-color: #BABABA; /* Etain oxydé*/
+  	border: none;
+  	padding: 15px;/* pour grossir le rond*/ 
+	
+}
+
+input  /* Paris, Belleville*/
+{
+    border: none;
+    width: 220px;
+    height: 42px;
+    /*width: 80%;*/
+    font-size: 1.1rem;
+    font-weight: bold;
+    /*margin-left: -5px;*/
+     background-color: #BABABA;
+}
+
+::placeholder /* couleur noire Paris, Belleville/ Le pseudo-élément ::placeholder représente le texte de substitution  
+pour un élément <input> ou <textarea>. Cela permet aux développeurs web de personnaliser l'apparence de ce texte.Le texte de 
+substitution est généralement représenté avec une couleur plus claire afin d'indiquer qu'il s'agit d'une suggestion et que ce 
+contenu n'a pas été saisi par l'utilisateur ou par le site même*/
+{
+    color: #000000;/*couleur noire*/
+}
+
+
+/*section 1 */
+
+.reservez
+{
+	background-color: #F2F2F2; 
+	flex-direction: column;
+    width: 110%;
+    display: flex;	
+}
+
+
+
+.resto /*bouton explorez*/
+{
+	color: #000000; 
+	display: flex;
+    align-items: center;
+    border: solid 2px #F2F2F2;
+    border-radius: 25px;
+    background-color: #FF79DA;
+    margin-left: 60px ;/* concerne les marges exterieures */
+    height: 3rem;
+    width: 12rem;
+}
+
+.resto:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
+{
+    color: #0065FC;
+    background-color: #F2F2F2;
+    cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
+    qui indique un lien,généralement c'est une main.*/
+}
+
+
+<!-- Section 2 -->
+
+.fonct /*bloc : fonctionnement restaurant menu dégustez*/
+{
+    display: flex;
+    font-weight: bolder;
+    margin: 40px 0 10px 0;
+}
+
+.fi /*bloc : fonctionnement*/
+{
+    display: flex;
+    flex-wrap: wrap; /*les éléments vont à la ligne lorsqu'il n'y a plus la place*/
+    padding-left: 5px !important; 
+}
+
+.contour /* contour les mots restaurant menu dégustez*/
+{
+    display: flex;
+    align-items: center;
+    border: solid 2px #F2F2F2;
+    border-radius: 25px;
+    background-color: white;
+    margin-right: 35px;
+}
+
+
+
+.fi span /*concerne les mots : les mots restaurant menu dégustez*/
+{
+	display: flex;
+    margin: 10px 15px 10px 10px;
+}
+
+.contour:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
+{
+    color: #0065FC;
+    background-color: #F2F2F2;
+    cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
+    qui indique un lien,généralement c'est une main.*/
+}
+
+
+/*section footer*/
+
+
+footer
+{
+	background-color: #303030; 
+	flex-direction: column;
+    width: 110%;
+}
+
+.foot /* concerne l'alignement footer */
+{
+	display: flex;	
+	
+}
+
+h3 /*ohmyfood*/
+{
+	color: white; 
+}
+
+h4
+{
+color: white;
+}
+
+h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
+{
+    color: #0065FC;
+    background-color: #F2F2F2;
+    cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
+    qui indique un lien,généralement c'est une main.*/
+
+}
+
+
+}
