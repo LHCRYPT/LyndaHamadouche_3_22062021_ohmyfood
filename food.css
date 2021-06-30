@@ -9,6 +9,18 @@ body /*pour que l'ordi ne mette pas une marge en plus sur toute la page*/
 	
 }
 
+header/*logo */
+{
+	display: flex;
+	justify-content: center;
+}
+
+
+.recherche
+{
+    display: flex;
+	justify-content: center;	
+}
 
  .fas.fa-map-marker-alt /*icone recherche*/
 {
@@ -23,11 +35,10 @@ input  /* Paris, Belleville*/
     border: none;
     width: 220px;
     height: 42px;
-    /*width: 80%;*/
+    width: 100%;
     font-size: 1.1rem;
     font-weight: bold;
-    /*margin-left: -5px;*/
-     background-color: #BABABA;
+    background-color: #BABABA;
 }
 
 ::placeholder /* couleur noire Paris, Belleville/ Le pseudo-élément ::placeholder représente le texte de substitution  
@@ -41,12 +52,18 @@ contenu n'a pas été saisi par l'utilisateur ou par le site même*/
 
 /*section 1 */
 
+h1
+{
+margin-left: 20px; /* concerne les marges exterieures */
+}
+
 .reservez
 {
-	background-color: #F2F2F2; 
+	background-color: #F2F2F2; /*gris clair*/
 	flex-direction: column;
     width: 110%;
     display: flex;	
+    align-items: center;
 }
 
 
@@ -59,9 +76,10 @@ contenu n'a pas été saisi par l'utilisateur ou par le site même*/
     border: solid 2px #F2F2F2;
     border-radius: 25px;
     background-color: #FF79DA;
-    margin-left: 60px ;/* concerne les marges exterieures */
     height: 3rem;
     width: 12rem;
+    font-size: 1rem;
+    padding-left: 28px;
 }
 
 .resto:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -116,6 +134,106 @@ contenu n'a pas été saisi par l'utilisateur ou par le site même*/
 }
 
 
+/*section3 Restaurants*/
+
+
+.central
+{
+	width: 110%;
+	background-color: #F2F2F2;
+}
+
+.conteneur1/* concerne l'alignement activite à Marseille */
+{
+	display: flex;
+	flex-direction: column;
+	color: #000000;/*couleur noire*/	
+	text-align: left;	
+	width: 90%;
+	margin-left: 20px; /*marges exterieures*/
+	margin-right: 18px;
+	background-color: #F2F2F2;
+}
+
+
+.element1 /*Vieux Port et Parc National des Calanques*/
+{  
+	box-shadow: 0px 8px 12px #aaa;
+	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
+	align-self: baseline;/*placement dans la box*/
+	margin-bottom: 25px;/* concerne les marges exterieures bas */
+	padding-bottom: 3px;/* concerne  marge interieure bas  */
+	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
+    qui indique un lien,généralement c'est une main.*/
+    background-color: white;
+}
+
+.phot /*photo elements 1 et 2*/
+{
+  	width: 360px;
+  	height: 150px;
+  	object-fit: cover; /*l'image sera découpée pour s'adapter*/   
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;  
+}
+
+.lieu /*noms des lieux pour activites*/
+{
+	color: #000000;/*couleur noire*/ 
+	font-size: 1.1em;  
+	font-weight: bold;
+	padding-left: 10px;/* concerne les marges interieures gauche  */
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.element2 /*Fort de Pomègues*/
+{	
+	box-shadow: 0px 8px 12px #aaa;
+	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
+	align-self: baseline;/*placement dans la box*/
+	margin-bottom: 25px;/* concerne les marges exterieures  */
+	padding-bottom: 3px;/* concerne  marge interieure bas  */
+	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
+    qui indique un lien,généralement c'est une main.*/
+    background-color: white;
+}
+
+.pho /*photo elements 2 et 3*/
+{
+  	width: 360px;
+  	height: 150px;
+  	object-fit: cover; /*l'image sera découpée pour s'adapter*/   
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;  
+}    
+
+.element3 /*Iles du Frioul*/
+{	
+	box-shadow: 0px 8px 12px #aaa;
+	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
+	align-self: baseline;/*placement dans la box*/
+	margin-bottom: 25px;/* concerne les marges exterieures  */
+	padding-bottom: 3px;/* concerne  marge interieure bas  */
+	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
+    qui indique un lien,généralement c'est une main.*/
+    background-color: white;
+}
+
+.element4 /*Parc National des Calanques*/
+{	
+	box-shadow: 0px 8px 12px #aaa;
+	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
+	align-self: baseline;/*placement dans la box*/
+	margin-bottom: 25px;/* concerne les marges exterieures  */
+	padding-bottom: 3px;/* concerne  marge interieure bas  */
+	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
+    qui indique un lien,généralement c'est une main.*/
+    background-color: white;
+}
+
+
+
 /*section footer*/
 
 
@@ -132,9 +250,10 @@ footer
 	
 }
 
-h3 /*ohmyfood*/
+.petitlogo
 {
-	color: white; 
+color: white; /*ne fonctionne pas*/
+margin-bottom: 10px;
 }
 
 h4
@@ -148,8 +267,11 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
     background-color: #F2F2F2;
     cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
     qui indique un lien,généralement c'est une main.*/
-
 }
 
+.contact
+{
+	color: white;
+}
 
 }
