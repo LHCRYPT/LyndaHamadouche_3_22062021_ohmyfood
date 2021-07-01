@@ -15,17 +15,26 @@ header/*logo */
 	justify-content: center;
 }
 
+.logo
+{
+	margin-top: 20px;/* concerne les marges exterieures  */
+	margin-bottom: 10px;
+}
 
 .recherche
 {
     display: flex;
 	justify-content: center;	
+	background-color: #CECECE;/* Gris Perle*/
+	width: 110%;
+    /*box-shadow: 0px 8px 32px blue;/* La 1ère valeur indique le décalage horizontal vers la droite -la 2ème correspond au décalage vertical 
+    vers le bas-le chiffre suivant indique la force du dégradé */
+    border-top: solid 4px #9E9E9E; /*trait foncé au dessus de Paris Belleville*/
 }
 
  .fas.fa-map-marker-alt /*icone recherche*/
 {
- 	background-color: #BABABA; /* Etain oxydé*/
-  	border: none;
+ 	border: none;
   	padding: 15px;/* pour grossir le rond*/ 
 	
 }
@@ -33,12 +42,12 @@ header/*logo */
 input  /* Paris, Belleville*/
 {
     border: none;
-    width: 220px;
+    width: 200px;
     height: 42px;
-    width: 100%;
     font-size: 1.1rem;
     font-weight: bold;
-    background-color: #BABABA;
+    background-color: #CECECE; /*Gris Perle*/
+
 }
 
 ::placeholder /* couleur noire Paris, Belleville/ Le pseudo-élément ::placeholder représente le texte de substitution  
@@ -70,16 +79,20 @@ margin-left: 20px; /* concerne les marges exterieures */
 
 .resto /*bouton explorez*/
 {
-	color: #000000; 
+	text-align: center;
+	color: white; 
 	display: flex;
     align-items: center;
     border: solid 2px #F2F2F2;
     border-radius: 25px;
-    background-color: #FF79DA;
     height: 3rem;
     width: 12rem;
-    font-size: 1rem;
-    padding-left: 28px;
+    font-size: 1.1rem;
+    padding-left: 15px;/* concerne les marges interieures */
+    padding-right: 15px;
+    margin-bottom: 40px;
+    background:linear-gradient(to bottom,#DF73FF 45%,#6600FF); /*dégradé linéaire couleur Héliotrope-Bleu persan */
+    font-weight: bold;
 }
 
 .resto:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -156,7 +169,7 @@ margin-left: 20px; /* concerne les marges exterieures */
 }
 
 
-.element1 /*Vieux Port et Parc National des Calanques*/
+.element1 /*La palette du goût et le délice des sens*/
 {  
 	box-shadow: 0px 8px 12px #aaa;
 	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
@@ -168,7 +181,7 @@ margin-left: 20px; /* concerne les marges exterieures */
     background-color: white;
 }
 
-.phot /*photo elements 1 et 2*/
+.phot /*photo elements 1 et 4*/
 {
   	width: 360px;
   	height: 150px;
@@ -187,7 +200,7 @@ margin-left: 20px; /* concerne les marges exterieures */
 	padding-bottom: 10px;
 }
 
-.element2 /*Fort de Pomègues*/
+.element2 /*la note enchantée*/
 {	
 	box-shadow: 0px 8px 12px #aaa;
 	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
@@ -208,7 +221,7 @@ margin-left: 20px; /* concerne les marges exterieures */
     border-top-left-radius: 15px;  
 }    
 
-.element3 /*Iles du Frioul*/
+.element3 /*A la française*/
 {	
 	box-shadow: 0px 8px 12px #aaa;
 	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
@@ -220,7 +233,7 @@ margin-left: 20px; /* concerne les marges exterieures */
     background-color: white;
 }
 
-.element4 /*Parc National des Calanques*/
+.element4 /*le délice des sens*/
 {	
 	box-shadow: 0px 8px 12px #aaa;
 	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
@@ -253,6 +266,8 @@ footer
 .petitlogo
 {
 color: white; /*ne fonctionne pas*/
+padding-top: 25px;
+padding-bottom: 5px;/* concerne  marge interieure bas  */
 margin-bottom: 10px;
 }
 
@@ -273,5 +288,6 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 {
 	color: white;
 }
+
 
 }
