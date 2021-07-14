@@ -11,8 +11,10 @@ body /*pour que l'ordi ne mette pas une marge en plus sur toute la page*/
 
 header/*logo */
 {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;/* concerne les marges exterieures  */
+	margin-bottom: 10px;
 }
 
 .logo
@@ -64,6 +66,11 @@ contenu n'a pas été saisi par l'utilisateur ou par le site même*/
 h1
 {
 margin-left: 20px; /* concerne les marges exterieures */
+}
+
+h3
+{
+	color: grey;
 }
 
 .reservez
@@ -156,7 +163,7 @@ margin-left: 20px; /* concerne les marges exterieures */
 	background-color: #F2F2F2;
 }
 
-.conteneur1/* concerne l'alignement activite à Marseille */
+.conteneur1/* concerne les restos de la 1ère page */
 {
 	display: flex;
 	flex-direction: column;
@@ -168,6 +175,17 @@ margin-left: 20px; /* concerne les marges exterieures */
 	background-color: #F2F2F2;
 }
 
+.nouveau
+{
+	color: #22780F; /* Vert de vessie*/
+	font-weight: bold;
+	font-size: 1rem;
+	border-radius: 2px;
+    background-color: #B0F2B6; /*Vert d'eau*/
+    text-align: center;
+    padding-left: 0px;/* concerne les marges intérieures */
+    width: 22%; /*taille du cadre*/
+}
 
 .element1 /*La palette du goût et le délice des sens*/
 {  
@@ -246,6 +264,18 @@ margin-left: 20px; /* concerne les marges exterieures */
 }
 
 
+.far.fa-heart /*coeur transparent*/
+{
+	padding-left: 155px;
+	font-size: 1.3rem;
+}
+
+.fas.fa-heart /*coeur violet*/
+{
+	padding-left: 155px;
+	font-size: 1.3rem;
+	color: violet;
+}
 
 /*section footer*/
 
@@ -290,4 +320,143 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 }
 
 
+}
+
+/*2ème page*/
+
+/*header*/
+
+.fleche /*près du logo*/
+{
+	align-items: left !important;
+}
+
+/*section 1*/
+.phototoa
+{
+	width: 400px;
+  	height: 250px;
+  	object-fit: cover; /*l'image sera découpée pour s'adapter*/   
+}
+
+
+
+/*section 2*/
+
+.deuxiemepage
+{
+	background-color: #F2F2F2; /*gris clair*/
+	flex-direction: column;
+    width: 110%;
+    display: flex;	
+    align-items: left;
+    font-weight: bold;
+    border-top-right-radius: 25px;/*ca ne fonctionne pas*/
+    border-top-left-radius: 25px;
+}
+
+.francaise
+{
+	font-weight: bold; 
+	font-style:italic;
+}
+
+.conteneur2/* concerne la 2ème page*/
+{
+	display: flex;
+	flex-direction: column;
+	color: #000000;/*couleur noire*/	
+	text-align: left;	
+	width: 90%;
+	margin-left: 20px; /*marges exterieures*/
+	margin-right: 18px;
+	background-color: #F2F2F2;
+}
+
+
+.element5 /*Les plats de la 2ème page*/
+{  
+	box-shadow: 0px 8px 12px #aaa;
+	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
+	align-self: baseline;/*placement dans la box*/
+	margin-bottom: 25px;/* concerne les marges exterieures bas */
+	padding-bottom: 3px;/* concerne  marge interieure bas  */
+	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
+    qui indique un lien,généralement c'est une main.*/
+    background-color: white;
+}
+
+.entrees
+{
+	font-size: 1.4rem;
+	color: #677179; /* Gris de Payne*/
+	align-items: left;
+    font-weight: bold;
+    padding-left: 20px;/* concerne les marges interieures  */
+}
+
+.plats
+{
+	font-size: 1.4rem;
+	color: #677179; /* Gris de Payne*/
+	align-items: left;
+    font-weight: bold;
+    padding-left: 20px;/* concerne les marges interieures  */
+}
+
+.desserts
+{
+	font-size: 1.4rem;
+	color: #677179; /* Gris de Payne*/
+	align-items: left;
+    font-weight: bold;
+    padding-left: 20px;/* concerne les marges interieures  */
+}
+
+.plat
+{
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+.saveur
+{
+	color: grey;
+	font-size: 1.1rem;
+}
+
+.prix
+{
+align-items: center; /*ca ne fonctionne pas*/
+color: #000000; /*couleur noire*/
+}
+
+
+
+
+.commander /*bouton commander*/
+{
+	text-align: center;
+	color: white; 
+	display: flex;
+    align-items: center;
+    border: solid 2px #F2F2F2;
+    border-radius: 25px;
+    height: 3rem;
+    width: 12rem;
+    font-size: 1.1rem;
+    /*padding-left: 15px;/* concerne les marges interieures */
+    /*padding-right: 15px;*/
+    margin-bottom: 40px;
+    background:linear-gradient(to bottom,#DF73FF 45%,#6600FF); /*dégradé linéaire couleur Héliotrope-Bleu persan */
+    font-weight: bold;
+}
+
+.commander:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
+{
+    color: #0065FC;
+    background-color: #F2F2F2;
+    cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
+    qui indique un lien,généralement c'est une main.*/
+}
 }
