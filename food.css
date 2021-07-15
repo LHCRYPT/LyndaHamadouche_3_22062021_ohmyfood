@@ -6,6 +6,7 @@ dans ce bloc*/
 body /*pour que l'ordi ne mette pas une marge en plus sur toute la page*/
 {
 	margin: 0;
+	font-family: 'Roboto', sans-serif;
 	
 }
 
@@ -21,6 +22,7 @@ header/*logo */
 {
 	margin-top: 20px;/* concerne les marges exterieures  */
 	margin-bottom: 10px;
+	font-family: 'Shrikhand', cursive;
 }
 
 .recherche
@@ -181,10 +183,17 @@ h3
 	font-weight: bold;
 	font-size: 1rem;
 	border-radius: 2px;
-    background-color: #B0F2B6; /*Vert d'eau*/
-    text-align: center;
-    padding-left: 0px;/* concerne les marges intérieures */
-    width: 22%; /*taille du cadre*/
+    background-color: #99E2D0; /*Vert d'eau*/
+   
+    padding: 10px;/* concerne les marges intérieures */
+    width: 70px;
+    height: 15px;
+    margin-top: -120px;
+    margin-bottom: 120px;
+    margin-left: 260px;
+    /*z-index: 2; /*pour QU4IL APPARAISSE DEVANT L4IMAGE*/
+position: absolute; /*pour que nouveau apparaisse sur l'image*/
+
 }
 
 .element1 /*La palette du goût et le délice des sens*/
@@ -206,6 +215,7 @@ h3
   	object-fit: cover; /*l'image sera découpée pour s'adapter*/   
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;  
+   /* z-index: -1;*/
 }
 
 .lieu /*noms des lieux pour activites*/
@@ -236,7 +246,8 @@ h3
   	height: 150px;
   	object-fit: cover; /*l'image sera découpée pour s'adapter*/   
     border-top-right-radius: 15px;
-    border-top-left-radius: 15px;  
+    border-top-left-radius: 15px; 
+   /* z-index: -1; */
 }    
 
 .element3 /*A la française*/
@@ -299,6 +310,7 @@ color: white; /*ne fonctionne pas*/
 padding-top: 25px;
 padding-bottom: 5px;/* concerne  marge interieure bas  */
 margin-bottom: 10px;
+font-family: 'Shrikhand', cursive;
 }
 
 h4
