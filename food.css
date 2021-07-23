@@ -67,7 +67,7 @@ contenu n'a pas été saisi par l'utilisateur ou par le site même*/
 
 h1
 {
-margin-left: 20px; /* concerne les marges exterieures */
+	margin-left: 20px; /* concerne les marges exterieures */
 }
 
 h3
@@ -227,43 +227,6 @@ h3
 }
 
 
-.element2 /*la note enchantée*/
-{	
-	box-shadow: 0px 8px 12px #aaa;
-	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
-	align-self: baseline;/*placement dans la box*/
-	margin-bottom: 25px;/* concerne les marges exterieures  */
-	padding-bottom: 3px;/* concerne  marge interieure bas  */
-	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
-    qui indique un lien,généralement c'est une main.*/
-    background-color: white;
-}
- 
-
-.element3 /*A la française*/
-{	
-	box-shadow: 0px 8px 12px #aaa;
-	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
-	align-self: baseline;/*placement dans la box*/
-	margin-bottom: 25px;/* concerne les marges exterieures  */
-	padding-bottom: 3px;/* concerne  marge interieure bas  */
-	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
-    qui indique un lien,généralement c'est une main.*/
-    background-color: white;
-}
-
-.element4 /*le délice des sens*/
-{	
-	box-shadow: 0px 8px 12px #aaa;
-	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
-	align-self: baseline;/*placement dans la box*/
-	margin-bottom: 25px;/* concerne les marges exterieures  */
-	padding-bottom: 3px;/* concerne  marge interieure bas  */
-	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
-    qui indique un lien,généralement c'est une main.*/
-    background-color: white;
-}
-
 .phot /*photo elements */
 {
   	width: 360px;
@@ -289,12 +252,6 @@ h3
 	font-size: 1.3rem;
 }
 
-/*.fas.fa-heart /*coeur entierement violet*/
-{
-	/*padding-left: 155px;*/
-	/*font-size: 1.3rem;*/
-	/*color: #9356DC; /*violet*/
-}
 
 .far.fa-heart:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
 {
@@ -366,7 +323,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 .fleche /*près du logo*/
 {
-	align-items: left !important;
+	text-align: left !important;
 }
 
 /*section 1*/
@@ -375,7 +332,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	width: 400px;
   	height: 250px;
   	object-fit: cover; /*l'image sera découpée pour s'adapter*/   
-}
+ }
 
 
 
@@ -385,18 +342,21 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 {
 	background-color: #F2F2F2; /*gris clair*/
 	flex-direction: column;
-    width: 110%;
+    width: 111%;
     display: flex;	
-    align-items: left;
     font-weight: bold;
     border-top-right-radius: 25px;/*ca ne fonctionne pas*/
     border-top-left-radius: 25px;
+    margin-top: -50px;/*marges exterieures*/
+    position: absolute; /*pour que le pavé à la française déborde sur la photo*/
 }
 
 .francaise
 {
 	font-weight: bold; 
 	font-style:italic;
+	font-family: 'Shrikhand', cursive;
+	/*font-family: 'Roboto', sans-serif;*/
 }
 
 .conteneur2/* concerne la 2ème page*/
@@ -406,30 +366,33 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	color: #000000;/*couleur noire*/	
 	text-align: left;	
 	width: 90%;
-	margin-left: 20px; /*marges exterieures*/
-	margin-right: 18px;
 	background-color: #F2F2F2;
 }
 
 
-.element5 /*Les plats de la 2ème page*/
+.element2 /*Les plats de la 2ème page*/
 {  
 	box-shadow: 0px 8px 12px #aaa;
 	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
 	align-self: baseline;/*placement dans la box*/
-	margin-bottom: 25px;/* concerne les marges exterieures bas */
-	padding-bottom: 3px;/* concerne  marge interieure bas  */
+	margin-bottom: 20px;/* concerne les marges exterieures bas */
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-bottom: 14px;/* concerne  marge interieure bas  */
+	padding-top: 14px;
+	padding-left: 10px;
 	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
     qui indique un lien,généralement c'est une main.*/
     background-color: white;
+    width: 350px;
+  	height: 50px;
 }
 
 .entrees
 {
 	font-size: 1.4rem;
 	color: #677179; /* Gris de Payne*/
-	align-items: left;
-    font-weight: bold;
+	font-weight: bold;
     padding-left: 20px;/* concerne les marges interieures  */
 }
 
@@ -437,17 +400,16 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 {
 	font-size: 1.4rem;
 	color: #677179; /* Gris de Payne*/
-	align-items: left;
-    font-weight: bold;
+	font-weight: bold;
     padding-left: 20px;/* concerne les marges interieures  */
+    font-weight: bold;
 }
 
 .desserts
 {
 	font-size: 1.4rem;
 	color: #677179; /* Gris de Payne*/
-	align-items: left;
-    font-weight: bold;
+	font-weight: bold;
     padding-left: 20px;/* concerne les marges interieures  */
 }
 
@@ -455,6 +417,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 {
 	font-weight: bold;
 	font-size: 1.4rem;
+	margin-bottom: -14px;/* pour faire l'écart entre le mot du haut et celui d'en bas: les marges interieures */
 }
 
 .saveur
@@ -465,33 +428,35 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 .prix
 {
-align-items: center; /*ca ne fonctionne pas*/
-color: #000000; /*couleur noire*/
+	text-align: right; /*ca ne fonctionne pas*/
+	color: #000000; /*couleur noire*/
+
 }
 
-.commander /*bouton commander*/
+.searchbutton /*bouton commander*/
 {
-	text-align: center;
+	text-align: center; /*ca ne fonctionne pas*/
 	color: white; 
 	display: flex;
-    align-items: center;
     border: solid 2px #F2F2F2;
     border-radius: 25px;
     height: 3rem;
     width: 12rem;
     font-size: 1.1rem;
-    /*padding-left: 15px;/* concerne les marges interieures */
-    /*padding-right: 15px;*/
+    padding-left: 37px;/* concerne les marges interieures pour centrer commander */
+    margin-top: 40px;
+    margin-left: 20px;
     margin-bottom: 40px;
     background:linear-gradient(to bottom,#DF73FF 45%,#6600FF); /*dégradé linéaire couleur Héliotrope-Bleu persan */
     font-weight: bold;
-}
+ }
 
-.commander:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
+.searchbutton:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
 {
     color: #0065FC;
     background-color: #F2F2F2;
     cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
     qui indique un lien,généralement c'est une main.*/
 }
+
 }
