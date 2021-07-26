@@ -86,15 +86,15 @@ h3
 
 .searchbutton
 {
+	font-size: 1rem;
 	text-align: center;
-	color: white; 
+	color: red; 
 	display: flex;
     align-items: center;
     border: solid 2px #F2F2F2;
     border-radius: 25px;
     height: 3rem;
     width: 15rem;
-    font-size: 1.1rem;
     padding-left: 15px;/* concerne les marges interieures */
     padding-right: 15px;
     margin-bottom: 40px;
@@ -245,10 +245,12 @@ h3
 	padding-left: 10px;/* concerne les marges interieures gauche  */
 	padding-top: 10px;
 	padding-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
 }
-.far.fa-heart /*coeur transparent*/
+.far.fa-heart /* coeur transparent*/
 {
-	padding-left: 155px;
+	margin-right: 10px;
 	font-size: 1.3rem;
 }
 
@@ -259,6 +261,8 @@ h3
     /*background-color: #9356DC;*/
     cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
     qui indique un lien,généralement c'est une main.*/
+    transition: width 2s;
+    display: none all 2s;
 }
 
 /*section footer*/
@@ -353,10 +357,22 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 .francaise
 {
+	font-size: 1.7rem;
 	font-weight: bold; 
 	font-style:italic;
 	font-family: 'Shrikhand', cursive;
-	/*font-family: 'Roboto', sans-serif;*/
+	display: flex;
+	justify-content: space-between; /*pour que le prix se mette à droite*/
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+
+.far.fa-heart.restCard__icon--empty
+{
+	margin-right: 20px;
+	font-size: 1.3rem;
+	margin-top: 10px;
 }
 
 .conteneur2/* concerne la 2ème page*/
@@ -417,33 +433,41 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 {
 	font-weight: bold;
 	font-size: 1.4rem;
-	margin-bottom: -14px;/* pour faire l'écart entre le mot du haut et celui d'en bas: les marges interieures */
+	margin-bottom: 5px;/* pour faire l'écart entre le mot du haut et celui d'en bas: les marges interieures */
 }
 
 .saveur
 {
 	color: grey;
-	font-size: 1.1rem;
+	font-size: 1rem;
+	display: flex;
+	justify-content: space-between; /*pour que le prix se mette à droite*/
 }
 
 .prix
 {
-	text-align: right; /*ca ne fonctionne pas*/
+	margin-right: 10px;
 	color: #000000; /*couleur noire*/
 
 }
 
+.com-btn
+{
+display: flex;
+justify-content: center; /*cela centre le mot dans son contour*/
+}
+
 .searchbutton /*bouton commander*/
 {
-	text-align: center; /*ca ne fonctionne pas*/
+	justify-content: center; /*cela centre le mot dans son contour*/
 	color: white; 
-	display: flex;
+	
+	
     border: solid 2px #F2F2F2;
     border-radius: 25px;
     height: 3rem;
     width: 12rem;
     font-size: 1.1rem;
-    padding-left: 37px;/* concerne les marges interieures pour centrer commander */
     margin-top: 40px;
     margin-left: 20px;
     margin-bottom: 40px;
