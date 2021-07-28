@@ -406,6 +406,20 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	background-color: white;
 	width: 350px;
 	height: 50px;
+
+	animation: fadein 5s; /*le temps que ça met pour réapparaître*/
+	-moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari et Chrome */
+    -o-animation: fadein 5s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
 }
 
 .entrees
@@ -414,7 +428,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	color: #677179; /* Gris de Payne*/
 	font-weight: bold;
 	padding-left: 30px;/* concerne les marges interieures  */
-	border-bottom: 4px solid #99E2D0; width: 15%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de l'entrée*/  
+	border-bottom: 4px solid #99E2D0; width: 10%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de l'entrée*/  
 }
 
 
@@ -997,7 +1011,6 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 		margin: 0;
 		font-family: 'Roboto', sans-serif;
 		background-color: green;
-		width: 90%;
 	}
 
 	header/*logo */
@@ -1057,7 +1070,8 @@ contenu n'a pas été saisi par l'utilisateur ou par le site même*/
 
 h1
 {
-	margin-left: 80px; /* concerne les marges exterieures */
+	margin-left: 40px; /* concerne les marges exterieures */
+	
 }
 
 h3
@@ -1196,18 +1210,18 @@ h3
 	box-shadow: 0px 8px 12px #aaa;
 	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
 	align-self: baseline;/*placement dans la box*/
-	width: 60%;
+	width: 23%;
 	margin-bottom: 25px;/* concerne les marges exterieures bas */
 	padding-bottom: 3px;/* concerne  marge interieure bas  */
 	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
 	qui indique un lien,généralement c'est une main.*/
-	background-color: mistyrose;
+	background-color: white;
 }
 
 
 .phot /*photo elements */
 {
-	width: 1130px;
+	width: 481px;
 	height: 170px;
 	object-fit: cover; /*l'image sera découpée pour s'adapter*/   
 	border-top-right-radius: 15px;
@@ -1225,9 +1239,9 @@ h3
 	padding: 10px;/* concerne les marges intérieures */
 	width: 70px;
 	height: 15px;
-	margin-top: -140px;
+	margin-top: -150px;
 	margin-bottom: 120px;
-	margin-left: 1000px;
+	margin-left: 330px;
 	/*z-index: 2; /*pour QU'IL APPARAISSE DEVANT L'IMAGE*/
 	position: absolute; /*pour que nouveau apparaisse sur l'image*/
 
@@ -1338,7 +1352,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 /*section 1*/
 .phototoa
 {
-	width: 100%;
+	width: 111%;
 	height: 380px;
 	object-fit: cover; /*l'image sera découpée pour s'adapter*/   
 }
@@ -1359,6 +1373,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	margin-top: -50px;/*marges exterieures*/
 	position: absolute; /*pour que le pavé à la française déborde sur la photo*/
 }
+
 
 .francaise
 {
@@ -1393,6 +1408,8 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 .element2 /*Les plats de la 2ème page*/
 {  
+	width: 550px;
+	height: 60px;
 	box-shadow: 0px 8px 12px #aaa;
 	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
 	align-self: baseline;/*placement dans la box*/
@@ -1405,9 +1422,24 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
 	qui indique un lien,généralement c'est une main.*/
 	background-color: white;
-	width: 350px;
-	height: 50px;
+	
+	animation: fadein 5s; /*le temps que ça met pour réapparaître*/
+	-moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari et Chrome */
+    -o-animation: fadein 5s; /* Opera */
 }
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+}
+
+
 
 .entrees
 {
@@ -1415,7 +1447,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	color: #677179; /* Gris de Payne*/
 	font-weight: bold;
 	padding-left: 30px;/* concerne les marges interieures  */
-	border-bottom: 4px solid #99E2D0; width: 15%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de l'entrée*/  
+	border-bottom: 4px solid #99E2D0; width: 5%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de l'entrée*/  
 }
 
 
@@ -1427,7 +1459,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	font-weight: bold;
 	padding-left: 30px;/* concerne les marges interieures  */
 	font-weight: bold;
-	border-bottom: 4px solid #99E2D0; width: 15%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de plat*/ 
+	border-bottom: 4px solid #99E2D0; width: 5%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de plat*/ 
 }
 
 .desserts
@@ -1436,7 +1468,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	color: #677179; /* Gris de Payne*/
 	font-weight: bold;
 	padding-left: 30px;/* concerne les marges interieures  */
-	border-bottom: 4px solid #99E2D0; width: 15%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de dessert*/ 
+	border-bottom: 4px solid #99E2D0; width: 5%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de dessert*/ 
 }
 
 .plat /*nom d'un plat*/
