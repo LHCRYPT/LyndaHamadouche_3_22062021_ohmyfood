@@ -3,34 +3,34 @@ dans ce bloc*/
 @media only screen and (max-width:768px)
 {
 
-	body /*pour que l'ordi ne mette pas une marge en plus sur toute la page*/
-	{
-		margin: 0;
-		font-family: 'Roboto', sans-serif;
+body /*pour que l'ordi ne mette pas une marge en plus sur toute la page*/
+{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
 
-	}
+}
 
-	header/*logo */
-	{
-		display: flex;
-		justify-content: center;
-		margin-top: 20px;/* concerne les marges exterieures  */
-		margin-bottom: 10px;
-	}
+header/*logo */
+{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;/* concerne les marges exterieures  */
+	margin-bottom: 10px;
+}
 
-	.logo
-	{
-		margin-top: 20px;/* concerne les marges exterieures  */
-		margin-bottom: 10px;
-		font-family: 'Shrikhand', cursive;
-	}
+.logo
+{
+	margin-top: 20px;/* concerne les marges exterieures  */
+	margin-bottom: 10px;
+	font-family: 'Shrikhand', cursive;
+}
 
-	.recherche
-	{
-		display: flex;
-		justify-content: center;	
-		background-color: #CECECE;/* Gris Perle*/
-		width: 110%;
+.recherche
+{
+	display: flex;
+	justify-content: center;	
+	background-color: #CECECE;/* Gris Perle*/
+	width: 110%;
     /*box-shadow: 0px 8px 32px blue;/* La 1ère valeur indique le décalage horizontal vers la droite -la 2ème correspond au décalage vertical 
     vers le bas-le chiffre suivant indique la force du dégradé */
     border-top: solid 4px #9E9E9E; /*trait foncé au dessus de Paris Belleville*/
@@ -1010,7 +1010,6 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	{
 		margin: 0;
 		font-family: 'Roboto', sans-serif;
-		background-color: green;
 	}
 
 	header/*logo */
@@ -1134,7 +1133,7 @@ display: none;
 	justify-content: center;
 	margin: 40px 0 10px 0;
 	width: 100%;
-	background-color: yellow;
+	background-color: white;
 }
 
 .fi /*bloc : restaurant menu dégustez*/
@@ -1209,7 +1208,7 @@ display: none;
 .central
 {
 	
-	background-color: blue ;/*#F2F2F2*/
+	background-color: #F2F2F2 ;
 
 }
 
@@ -1230,7 +1229,7 @@ display: none;
 	
 	margin-left: 40px; /*marges exterieures*/
 	margin-right: 40px;
-	background-color: red; /*#F2F2F2*/
+	background-color: #F2F2F2; 
 }
 
 
@@ -1253,7 +1252,7 @@ display: none;
 
 .phot /*photo elements */
 {
-	width: 443px;
+	width: 425px;
 	height: 170px;
 	object-fit: cover; /*l'image sera découpée pour s'adapter*/   
 	border-top-right-radius: 15px;
@@ -1273,7 +1272,7 @@ display: none;
 	height: 15px;
 	margin-top: -160px;
 	margin-bottom: 120px;
-	margin-left: 400px;
+	margin-left: 320px;
 	/*z-index: 2; /*pour QU'IL APPARAISSE DEVANT L'IMAGE*/
 	position: absolute; /*pour que nouveau apparaisse sur l'image*/
 
