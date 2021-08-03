@@ -1069,7 +1069,7 @@ contenu n'a pas été saisi par l'utilisateur ou par le site même*/
 
 h1
 {
-	margin-left: 40px; /* concerne les marges exterieures */
+	margin-left: 70px; /* concerne les marges exterieures */
 	
 }
 
@@ -1142,6 +1142,7 @@ display: none;
 	justify-content: center;
 	flex-wrap: wrap; /*les éléments vont à la ligne lorsqu'il n'y a plus la place*/
 	margin-bottom: 10px; /* marges exterieures*/
+
 }
 
 .fi span /*concerne les mots : les mots restaurant menu dégustez*/
@@ -1159,6 +1160,7 @@ display: none;
 	border: solid 2px #F2F2F2;
 	border-radius: 25px;
 	background-color: white;
+	margin-left: 15px;
 }
 
 .contour:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -1283,7 +1285,7 @@ display: none;
 	color: #000000;/*couleur noire*/ 
 	font-size: 1.1em;  
 	font-weight: bold;
-	/*padding-left: 100px;/* concerne les marges interieures gauche  */
+	padding-left: 15px;/* concerne les marges interieures gauche  */
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: flex;
@@ -1328,6 +1330,7 @@ footer
 {
 	display: flex;	
 	margin-left: 40px;
+	padding-left: 410px;
 	
 }
 
