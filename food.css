@@ -1131,7 +1131,7 @@ display: none;
 {
 	display: flex;
 	justify-content: center;
-	margin: 40px 0 10px 0;
+	margin: 40px 0 10px 0; /* haut/droite/bas/gauche */
 	width: 100%;
 	background-color: white;
 }
@@ -1151,6 +1151,7 @@ display: none;
 	margin-bottom: 10px; /* marges exterieures*/
 	margin-top: 10px;
 	padding-right: 20px; /*pour agrandir le cadre*/
+
 }
 
 .contour /* contour les mots restaurant menu dégustez*/
@@ -1159,7 +1160,7 @@ display: none;
 	align-items: center;
 	border: solid 2px #F2F2F2;
 	border-radius: 25px;
-	background-color: white;
+	background-color: #F2F2F2; /*couleur à l'intérieur du contour*/
 	margin-left: 15px;
 }
 
@@ -1209,28 +1210,23 @@ display: none;
 
 .central
 {
-	
 	background-color: #F2F2F2 ;
-
 }
 
 .center
 {
-		margin-right: auto;
-		margin-left: auto;
+	margin-right: auto;
+	margin-left: auto;
 	width: 60%;
 }
 .conteneur1/* concerne les restos de la 1ère page */
 {
 	display: flex;
-	/*flex-direction: column;*/
 	flex-wrap: wrap; /*les éléments vont à la ligne lorsqu'il n'y a plus la place*/
-   
-	color: #000000;/*couleur noire*/	
+   	color: #000000;/*couleur noire*/	
 	text-align: left;	
-	
 	margin-left: 40px; /*marges exterieures*/
-	margin-right: 40px;
+	margin-right: 40px;*/
 	background-color: #F2F2F2; 
 }
 
@@ -1282,7 +1278,7 @@ display: none;
 
 .lieu /*noms des lieux pour activites*/
 {
-	color: #000000;/*couleur noire*/ 
+	color: #000000 !important;/*couleur noire*/ 
 	font-size: 1.1em;  
 	font-weight: bold;
 	padding-left: 15px;/* concerne les marges interieures gauche  */
@@ -1291,12 +1287,13 @@ display: none;
 	display: flex;
 	justify-content: space-between;
 
+
 }
 
 .ville
 {
 	/*padding-left: 30px;/* concerne les marges interieures gauche */
-	
+	color: #000000 !important;/*couleur noire*/ 
 }
 
 .far.fa-heart /* coeur transparent*/
@@ -1384,9 +1381,9 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 }
 
 /*section 1*/
-.phototoa
+.phototoa /*photo du plat*/
 {
-	width: 111%;
+	width: 100%;
 	height: 380px;
 	object-fit: cover; /*l'image sera découpée pour s'adapter*/   
 }
@@ -1395,6 +1392,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 /*section 2*/
 
+
 .deuxiemepage
 {
 	background-color: #F2F2F2; /*gris clair*/
@@ -1402,10 +1400,15 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	width: 100%;
 	display: flex;	
 	font-weight: bold;
-	border-top-right-radius: 25px;/*ca ne fonctionne pas*/
+	border-top-right-radius: 25px;
 	border-top-left-radius: 25px;
 	margin-top: -50px;/*marges exterieures*/
 	position: absolute; /*pour que le pavé à la française déborde sur la photo*/
+	/*align-items: center;*/
+	/*margin-right: auto;
+	margin-left: auto;*/
+	background-color: #F2F2F2;
+
 }
 
 
@@ -1416,7 +1419,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	font-style:italic;
 	font-family: 'Shrikhand', cursive;
 	display: flex;
-	justify-content: space-between; /*pour que le prix se mette à droite*/
+	justify-content: space-between; /*pour que le coeur se mette à droite*/
 	margin-top: 20px;
 	margin-left: 30px;
 }
@@ -1433,10 +1436,12 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 {
 	display: flex;
 	flex-direction: column;
+
 	color: #000000;/*couleur noire*/	
 	text-align: left;	
 	width: 90%;
 	background-color: #F2F2F2;
+	
 }
 
 
