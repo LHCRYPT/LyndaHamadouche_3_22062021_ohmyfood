@@ -117,21 +117,32 @@ h3
 
 /* Section 2*/
 
+.titre /*mot fonctionnement*/
+{
+	margin-left: 15px;
+	padding-bottom: 10px;
+}
+
 .fonct /*bloc : fonctionnement restaurant menu dégustez*/
 {
-    /*display: flex;
-    justify-content: center;
-    /*margin: 40px 0 10px 0;*/
+	display: flex;
+	justify-content: center;
+	margin: 20px 0 40px 0; /* marges exterieures haut/droite/bas/gauche */
+	padding-left: auto;
+	padding-right: auto;
+	width: 100%;
+	background-color: white;
 }
+
+
 
 .fi /*bloc : restaurant menu dégustez*/
 {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap; /*les éléments vont à la ligne lorsqu'il n'y a plus la place*/
-
 	margin-bottom: 10px; /* marges exterieures*/
-
+	
 }
 
 .fi span /*concerne les mots : les mots restaurant menu dégustez*/
@@ -140,6 +151,7 @@ h3
 	margin-bottom: 10px; /* marges exterieures*/
 	margin-top: 10px;
 	padding-right: 30px; /*pour agrandir le cadre*/
+
 }
 
 .contour /* contour les mots restaurant menu dégustez*/
@@ -149,6 +161,8 @@ h3
 	border: solid 2px #F2F2F2;
 	border-radius: 25px;
 	background-color: white;
+	margin-bottom: 20px;
+	z-index: 1;
 }
 
 .contour:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -182,19 +196,21 @@ h3
 
 .number
 {
-	border: #DEEBFF solid 1px;
-	border-radius: 50%;
+    border: #DEEBFF solid 1px;
+    border-radius: 50%;
     padding: 9px;
     color: white;
     font-size: 0.7rem;
-	height: 0.7rem;
+    height: 0.7rem;
     width: 0.7rem;
     background-color: #9356DC ;/*primaire: violet*/
     text-align: center; /*pour centrer le chiffre*/
-    margin-left: -240px;
-    margin-top: 92px;
-	position: absolute; /*pour que nouveau apparaisse sur l'image*/
+    margin-left: 35px;
+    margin-top: 7px;
+    z-index: 2;
 }
+
+
 
 /*section3 Restaurants*/
 
@@ -346,11 +362,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 /*header*/
 
-.fas.fa-arrow-left /*flèche près du logo*/
-{
-	/*margin-left: 5px;*/
 
-}
 
 /*section 1*/
 .phototoa
@@ -404,7 +416,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	flex-direction: column;
 	color: #000000;/*couleur noire*/	
 	text-align: left;	
-	width: 110%;
+	width: 100%;
 	background-color: #F2F2F2;
 }
 
@@ -423,7 +435,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
 	qui indique un lien,généralement c'est une main.*/
 	background-color: white;
-	width: 350px;
+	width: 90%;
 	height: 50px;
 
 	animation: fadein 5s; /*le temps que ça met pour réapparaître*/
@@ -1218,22 +1230,22 @@ display: none;
 .fas.fa-mobile-alt /* icone restaurant*/
 {
 	margin-right: 10px; /*marges exterieures à l'interieur du cadre*/
-	margin-left: 10px;
-	padding-left: 20px;
+	margin-left: 7px;
+	padding-left: 15px;
 }
 
 .fas.fa-list-ul /* icone menu*/
 {
 	margin-right: 10px; /*marges exterieures*/
-	margin-left: 10px;
-	padding-left: 20px;
+	margin-left: 7px;
+	padding-left: 15px;
 }
 
 .fas.fa-store /* icone degustez*/
 {
 	margin-right: 10px; /*marges exterieures*/
-	margin-left: 10px;
-	padding-left: 20px;
+	margin-left: 7px;
+	padding-left: 15px;
 }
 
 .number
@@ -1342,8 +1354,6 @@ display: none;
 	padding-bottom: 10px;
 	display: flex;
 	justify-content: space-between;
-
-
 }
 
 .ville
@@ -1488,7 +1498,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	display: flex;
 	justify-content: space-between; /*pour que le coeur se mette à droite*/
 	margin-top: 20px;
-	margin-left: 30px;
+	margin-left: 460px;
 }
 
 
@@ -1563,6 +1573,10 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	animation: glissement 2s infinite alternate;
 }
 
+.ent /*pour pouvoir centrer le trait sous le mot entrée*/
+{
+padding-left: 30px;	
+}
 
 .entrees
 {
@@ -1574,17 +1588,25 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	border-bottom: 4px solid #99E2D0; width: 12%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de l'entrée*/  
 }
 
-
+.pla /*pour pouvoir centrer le trait sous le mot plat*/
+{
+padding-left: 30px;	
+}
 
 .plats /*titre au dessus des plats*/
 {
 	font-size: 1.4rem;
 	color: #677179; /* Gris de Payne*/
 	font-weight: bold;
-	padding-left: 30px;/* concerne les marges interieures  */
+	padding-left: 3px;/* concerne les marges interieures  */
 	font-weight: bold;
-	border-bottom: 4px solid #99E2D0; width: 5%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de plat*/ 
+	border-bottom: 4px solid #99E2D0; width: 8%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de plat*/ 
 
+}
+
+.des /*pour pouvoir centrer le trait sous le mot dessert*/
+{
+padding-left: 30px;	
 }
 
 .desserts
@@ -1592,8 +1614,8 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	font-size: 1.4rem;
 	color: #677179; /* Gris de Payne*/
 	font-weight: bold;
-	padding-left: 30px;/* concerne les marges interieures  */
-	border-bottom: 4px solid #99E2D0; width: 5%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de dessert*/ 
+	padding-left: 3px;/* concerne les marges interieures  */
+	border-bottom: 4px solid #99E2D0; width: 13%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de dessert*/ 
 }
 
 .plat /*nom d'un plat*/
