@@ -177,6 +177,21 @@ h3
 	margin-left: 10px;
 }
 
+.number
+{
+	border: #DEEBFF solid 1px;
+	border-radius: 50%;
+    padding: 9px;
+    color: white;
+    font-size: 0.7rem;
+	height: 0.7rem;
+    width: 0.7rem;
+    background-color: #9356DC ;/*primaire: violet*/
+    text-align: center; /*pour centrer le chiffre*/
+    margin-left: -220px;
+    margin-top: 92px;
+	position: absolute; /*pour que nouveau apparaisse sur l'image*/
+}
 
 /*section3 Restaurants*/
 
@@ -1127,11 +1142,17 @@ display: none;
 
 /* Section 2*/
 
+.titre /*mot fonctionnement*/
+{
+	margin-left: 15px;
+	padding-bottom: 10px;
+}
+
 .fonct /*bloc : fonctionnement restaurant menu dégustez*/
 {
 	display: flex;
 	justify-content: center;
-	margin: 40px 0 10px 0; /* haut/droite/bas/gauche */
+	margin: 20px 0 40px 0; /* marges exterieures haut/droite/bas/gauche */
 	width: 100%;
 	background-color: white;
 }
@@ -1147,10 +1168,11 @@ display: none;
 
 .fi span /*concerne les mots : les mots restaurant menu dégustez*/
 {
-	display: flex;
+	font-size: 1.1rem;
 	margin-bottom: 10px; /* marges exterieures*/
 	margin-top: 10px;
-	padding-right: 20px; /*pour agrandir le cadre*/
+	padding-left: 15px;/* marges intérieures*/
+	padding-right: 35px; /*pour agrandir le cadre*/
 
 }
 
@@ -1161,7 +1183,7 @@ display: none;
 	border: solid 2px #F2F2F2;
 	border-radius: 25px;
 	background-color: #F2F2F2; /*couleur à l'intérieur du contour*/
-	margin-left: 15px;
+	margin-left: 40px;/* marges exterieures*/
 }
 
 .contour:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -1176,18 +1198,21 @@ display: none;
 {
 	margin-right: 10px; /*marges exterieures à l'interieur du cadre*/
 	margin-left: 10px;
+	padding-left: 20px;
 }
 
 .fas.fa-list-ul /* icone menu*/
 {
 	margin-right: 10px; /*marges exterieures*/
 	margin-left: 10px;
+	padding-left: 20px;
 }
 
 .fas.fa-store /* icone degustez*/
 {
 	margin-right: 10px; /*marges exterieures*/
 	margin-left: 10px;
+	padding-left: 20px;
 }
 
 .number
@@ -1201,12 +1226,19 @@ display: none;
     width: 0.7rem;
     background-color: #9356DC ;/*primaire: violet*/
     text-align: center; /*pour centrer le chiffre*/
-
+    margin-left: 420px;
+    margin-top: 7px;
+	position: absolute; /*pour que nouveau apparaisse sur l'image*/
 }
+	
 
 
 /*section3 Restaurants*/
 
+.activites /*mot restaurants*/
+{
+	padding-top: 40px;
+}
 
 .central
 {
@@ -1439,7 +1471,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 	color: #000000;/*couleur noire*/	
 	text-align: left;	
-	width: 90%;
+	/*width: 100%;*/
 	background-color: #F2F2F2;
 	
 }
