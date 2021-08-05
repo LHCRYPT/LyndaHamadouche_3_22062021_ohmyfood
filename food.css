@@ -139,7 +139,7 @@ h3
 	display: flex;
 	margin-bottom: 10px; /* marges exterieures*/
 	margin-top: 10px;
-	padding-right: 20px; /*pour agrandir le cadre*/
+	padding-right: 30px; /*pour agrandir le cadre*/
 }
 
 .contour /* contour les mots restaurant menu dégustez*/
@@ -163,18 +163,21 @@ h3
 {
 	margin-right: 10px; /*marges exterieures à l'interieur du cadre*/
 	margin-left: 10px;
+	padding-left: 15px;
 }
 
 .fas.fa-list-ul /* icone menu*/
 {
 	margin-right: 10px; /*marges exterieures*/
 	margin-left: 10px;
+	padding-left: 15px;
 }
 
 .fas.fa-store /* icone degustez*/
 {
 	margin-right: 10px; /*marges exterieures*/
 	margin-left: 10px;
+	padding-left: 15px;
 }
 
 .number
@@ -188,7 +191,7 @@ h3
     width: 0.7rem;
     background-color: #9356DC ;/*primaire: violet*/
     text-align: center; /*pour centrer le chiffre*/
-    margin-left: -220px;
+    margin-left: -240px;
     margin-top: 92px;
 	position: absolute; /*pour que nouveau apparaisse sur l'image*/
 }
@@ -365,7 +368,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 {
 	background-color: #F2F2F2; /*gris clair*/
 	flex-direction: column;
-	width: 111%;
+	width: 100%;
 	display: flex;	
 	font-weight: bold;
 	border-top-right-radius: 25px;/*ca ne fonctionne pas*/
@@ -384,12 +387,13 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	justify-content: space-between; /*pour que le prix se mette à droite*/
 	margin-top: 20px;
 	margin-left: 30px;
+	width: 100%;
 }
 
 
 .far.fa-heart.restCard__icon--empty
 {
-	margin-right: 20px;
+	margin-right: 43px;
 	font-size: 1.3rem;
 	margin-top: 10px;
 }
@@ -400,7 +404,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	flex-direction: column;
 	color: #000000;/*couleur noire*/	
 	text-align: left;	
-	width: 90%;
+	width: 110%;
 	background-color: #F2F2F2;
 }
 
@@ -700,6 +704,22 @@ h3
 {
 	margin-right: 10px; /*marges exterieures*/
 	margin-left: 10px;
+}
+
+.number
+{
+	border: #DEEBFF solid 1px;
+	border-radius: 50%;
+    padding: 9px;
+    color: white;
+    font-size: 0.7rem;
+	height: 0.7rem;
+    width: 0.7rem;
+    background-color: #9356DC ;/*primaire: violet*/
+    text-align: center; /*pour centrer le chiffre*/
+    margin-left: -240px;
+    margin-top: 92px;
+	position: absolute; /*pour que nouveau apparaisse sur l'image*/
 }
 
 
@@ -1183,7 +1203,8 @@ display: none;
 	border: solid 2px #F2F2F2;
 	border-radius: 25px;
 	background-color: #F2F2F2; /*couleur à l'intérieur du contour*/
-	margin-left: 40px;/* marges exterieures*/
+	margin-left: -10px;/* marges exterieures*/
+	z-index: 1;
 }
 
 .contour:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -1226,9 +1247,10 @@ display: none;
     width: 0.7rem;
     background-color: #9356DC ;/*primaire: violet*/
     text-align: center; /*pour centrer le chiffre*/
-    margin-left: 420px;
+    margin-left: 15px;
     margin-top: 7px;
-	position: absolute; /*pour que nouveau apparaisse sur l'image*/
+    z-index: 2;
+	/*position: absolute; /*pour que nouveau apparaisse sur l'image*/
 }
 	
 
@@ -1257,9 +1279,11 @@ display: none;
 	flex-wrap: wrap; /*les éléments vont à la ligne lorsqu'il n'y a plus la place*/
    	color: #000000;/*couleur noire*/	
 	text-align: left;	
-	margin-left: 40px; /*marges exterieures*/
-	margin-right: 40px;*/
+	margin-left: auto; /*marges exterieures*/
+	margin-right: auto;
 	background-color: #F2F2F2; 
+	width: 92%;
+	padding-left: 100px;
 }
 
 
@@ -1282,7 +1306,7 @@ display: none;
 
 .phot /*photo elements */
 {
-	width: 425px;
+	width: 420px;
 	height: 170px;
 	object-fit: cover; /*l'image sera découpée pour s'adapter*/   
 	border-top-right-radius: 15px;
@@ -1344,6 +1368,14 @@ display: none;
     transition: width 2s;
     display: none all 2s;
 }
+
+.fas.fa-heart.fa-backward:hover /*coeur remplit en violet*/
+{
+	color: #9356DC;
+	absolute
+	z-index: 2;
+}
+
 
 /*section footer*/
 
@@ -1408,11 +1440,14 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 .fas.fa-arrow-left /*flèche près du logo*/
 {
-	/*margin-left: 5px;*/
+	/*padding-left: -100px;
+	display: flex;
+	align-items: center;*/
 
 }
 
 /*section 1*/
+
 .phototoa /*photo du plat*/
 {
 	width: 100%;
@@ -1473,7 +1508,8 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	text-align: left;	
 	/*width: 100%;*/
 	background-color: #F2F2F2;
-	
+	margin-left: auto; /*marges exterieures*/
+	margin-right: auto;
 }
 
 
@@ -1533,8 +1569,9 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	font-size: 1.4rem;
 	color: #677179; /* Gris de Payne*/
 	font-weight: bold;
-	padding-left: 30px;/* concerne les marges interieures  */
-	border-bottom: 4px solid #99E2D0; width: 5%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de l'entrée*/  
+	padding-left: 0px;/* concerne les marges interieures  */
+	/*margin-left: 30px;*/
+	border-bottom: 4px solid #99E2D0; width: 12%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de l'entrée*/  
 }
 
 
