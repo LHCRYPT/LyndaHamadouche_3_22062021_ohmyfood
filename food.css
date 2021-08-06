@@ -1,6 +1,6 @@
-/*Medium devices (mobile/tablette, 768px and up)si la largeur de l'appareil est inférieure ou égale à 768px, appliquez le CSS défini 
+/*Medium devices (mobile/tablette, 760px and up)si la largeur de l'appareil est inférieure ou égale à 768px, appliquez le CSS défini 
 dans ce bloc*/
-@media only screen and (max-width:768px)
+@media only screen and (max-width:760px)
 {
 
 body /*pour que l'ordi ne mette pas une marge en plus sur toute la page*/
@@ -538,9 +538,9 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 
 
-/*Medium devices (tablette, min 769 max 1000px )si la largeur de l'appareil est inférieure ou égale à 1000px, appliquez le CSS défini 
+/*Medium devices (tablette, min 761 max 1000px )si la largeur de l'appareil est inférieure ou égale à 1000px, appliquez le CSS défini 
 dans ce bloc*/
-@media only screen and (min-width:769px) and (max-width: 1000px)
+@media only screen and (min-width:761px) and (max-width: 1000px)
 
 {
 
@@ -548,7 +548,6 @@ dans ce bloc*/
 	{
 		margin: 0;
 		font-family: 'Roboto', sans-serif;
-
 	}
 
 	header/*logo */
@@ -1176,7 +1175,7 @@ display: none;
 
 .titre /*mot fonctionnement*/
 {
-	margin-left: 15px;
+	margin-left: -4px;
 	padding-bottom: 10px;
 }
 
