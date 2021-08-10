@@ -380,7 +380,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 {
 	background-color: #F2F2F2; /*gris clair*/
 	flex-direction: column;
-	width: 100%;
+	width: 110%;
 	display: flex;	
 	font-weight: bold;
 	border-top-right-radius: 25px;/*ca ne fonctionne pas*/
