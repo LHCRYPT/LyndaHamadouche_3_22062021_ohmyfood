@@ -538,7 +538,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 
 
-/*Medium devices (tablette, min 761 max 1000px )si la largeur de l'appareil est inférieure ou égale à 1000px, appliquez le CSS défini 
+    /*Medium devices (tablette, min 761 max 1000px )si la largeur de l'appareil est inférieure ou égale à 1000px, appliquez le CSS défini 
 dans ce bloc*/
 @media only screen and (min-width:761px) and (max-width: 1000px)
 
@@ -548,6 +548,7 @@ dans ce bloc*/
 	{
 		margin: 0;
 		font-family: 'Roboto', sans-serif;
+		background-color: red;
 	}
 
 	header/*logo */
@@ -1047,7 +1048,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 }
 
 
-/*concerne pc*/
+   /*concerne pc*/
 @media only screen and (min-width: 1001px) /*à partir de 1001px*/
 
 {
