@@ -1,13 +1,12 @@
 /*Medium devices (mobile/tablette, 760px and up)si la largeur de l'appareil est inférieure ou égale à 768px, appliquez le CSS défini 
 dans ce bloc*/
-@media only screen and (max-width:760px)
+@media only screen and (max-width:425px)
 {
 
 body /*pour que l'ordi ne mette pas une marge en plus sur toute la page*/
 {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
-
 }
 
 header/*logo */
@@ -128,8 +127,7 @@ h3
 	display: flex;
 	justify-content: center;
 	margin: 20px 0 40px 0; /* marges exterieures haut/droite/bas/gauche */
-	padding-left: auto;
-	padding-right: auto;
+	padding: auto;
 	width: 100%;
 	background-color: white;
 }
@@ -205,7 +203,7 @@ h3
     width: 0.7rem;
     background-color: #9356DC ;/*primaire: violet*/
     text-align: center; /*pour centrer le chiffre*/
-    margin-left: 35px;
+    margin-left: 37px;
     margin-top: 7px;
     z-index: 2;
 }
@@ -538,9 +536,9 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 
 
-    /*Medium devices (tablette, min 761 max 1000px )si la largeur de l'appareil est inférieure ou égale à 1000px, appliquez le CSS défini 
+    /*Medium devices (tablette, min 768px max 1000px )si la largeur de l'appareil est inférieure ou égale à 1000px, appliquez le CSS défini 
 dans ce bloc*/
-@media only screen and (min-width:761px) and (max-width: 1000px)
+@media only screen and (min-width:768px) and (max-width: 1000px)
 
 {
 
@@ -548,7 +546,6 @@ dans ce bloc*/
 	{
 		margin: 0;
 		font-family: 'Roboto', sans-serif;
-		background-color: red;
 	}
 
 	header/*logo */
@@ -740,8 +737,8 @@ h3
 
 .central
 {
-	width: 110%;
-	background-color: #F2F2F2;
+	width: 100%;
+	background-color: red; /*#F2F2F2;*/
 }
 
 .conteneur1/* concerne les restos de la 1ère page */
@@ -1377,12 +1374,13 @@ display: none;
     qui indique un lien,généralement c'est une main.*/
     transition: width 2s;
     display: none all 2s;
+
 }
 
 .fas.fa-heart.fa-backward:hover /*coeur remplit en violet*/
 {
 	color: #9356DC;
-	absolute
+	/*position: absolute;*/
 	z-index: 2;
 }
 
@@ -1666,9 +1664,8 @@ padding-left: 30px;
 	color: #0065FC;
 	background-color: #F2F2F2;
     cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
-    qui indique un lien,généralement c'est une main.*/
+    qui indique un lien,généralement c'est une main*/
 }
-
 }
 
 
