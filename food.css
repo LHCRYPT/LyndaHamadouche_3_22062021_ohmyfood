@@ -1,6 +1,6 @@
 /*Medium devices (mobile/tablette, 760px and up)si la largeur de l'appareil est inférieure ou égale à 768px, appliquez le CSS défini 
 dans ce bloc*/
-@media only screen and (max-width:425px)
+@media only screen and (max-width:576px)
 {
 
 body /*pour que l'ordi ne mette pas une marge en plus sur toute la page*/
@@ -127,7 +127,7 @@ h3
 	display: flex;
 	justify-content: center;
 	margin: 20px 0 40px 0; /* marges exterieures haut/droite/bas/gauche */
-	padding: auto;
+	/*padding: auto;*/
 	width: 100%;
 	background-color: white;
 }
@@ -296,8 +296,8 @@ h3
 	/*background-color: #9356DC;*/
     cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
     qui indique un lien,généralement c'est une main.*/
-    transition: width 2s;
-    display: none all 2s;
+    /*transition: width 2s;
+    display: none all 2s;*/
 }
 
 /*section footer*/
@@ -449,7 +449,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 		opacity:1;
 	}
 }
-}
+
 
 .entrees
 {
@@ -523,22 +523,22 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	font-weight: bold;
 }
 
-.searchbutton:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
+.searchbutton:hover  /* une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
 {
 	color: #0065FC;
 	background-color: #F2F2F2;
-    cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
-    qui indique un lien,généralement c'est une main.*/
+    cursor: pointer; 
+    /* définit la forme du curseur lorsque le pointeur est au-dessus de l'element, Le curseur est un pointeur 
+    qui indique un lien,generalement c'est une main. */
+}
 }
 
-}
 
 
 
-
-    /*Medium devices (tablette, min 768px max 1000px )si la largeur de l'appareil est inférieure ou égale à 1000px, appliquez le CSS défini 
-dans ce bloc*/
-@media only screen and (min-width:768px) and (max-width: 1000px)
+    /* Medium devices (tablette, min 768px max 1000px )si la largeur de l'appareil est inférieure ou égale à 1000px, appliquez le CSS défini 
+dans ce bloc */
+@media only screen and (min-width:768px) and (max-width: 1024px)
 
 {
 
@@ -818,8 +818,8 @@ h3
 	/*background-color: #9356DC;*/
     cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
     qui indique un lien,généralement c'est une main.*/
-    transition: width 2s;
-    display: none all 2s;
+    /*transition: width 2s;
+    display: none all 2s;*/
 }
 
 /*section footer*/
@@ -1046,7 +1046,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 
    /*concerne pc*/
-@media only screen and (min-width: 1001px) /*à partir de 1001px*/
+@media only screen and (min-width: 1025px) /*à partir de 1001px*/
 
 {
 
@@ -1372,8 +1372,8 @@ display: none;
 	/*background-color: #9356DC;*/
     cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
     qui indique un lien,généralement c'est une main.*/
-    transition: width 2s;
-    display: none all 2s;
+    /*transition: width 2s;
+    display: none all 2s;*/
 
 }
 
@@ -1553,7 +1553,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	}
 }
 
-}
+
 
 
 .element2:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
