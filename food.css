@@ -127,7 +127,6 @@ h3
 	display: flex;
 	justify-content: center;
 	margin: 20px 0 40px 0; /* marges exterieures haut/droite/bas/gauche */
-	/*padding: auto;*/
 	width: 100%;
 	background-color: white;
 }
@@ -161,6 +160,8 @@ h3
 	background-color: white;
 	margin-bottom: 20px;
 	z-index: 1;
+	margin-left: -10px;
+	width: 80%;
 }
 
 .contour:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -169,6 +170,7 @@ h3
 	background-color: #F2F2F2;
     cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
     qui indique un lien,généralement c'est une main.*/
+
 }
 
 .fas.fa-mobile-alt /* icone restaurant*/
@@ -308,6 +310,7 @@ footer
 	background-color: #303030; 
 	flex-direction: column;
 	width: 110%;
+	padding-bottom: 15px;
 }
 
 .foot /* concerne l'alignement footer */
@@ -536,7 +539,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 
 
-    /* Medium devices (tablette, min 768px max 1000px )si la largeur de l'appareil est inférieure ou égale à 1000px, appliquez le CSS défini 
+    /* Medium devices (tablette, min 768px max 1024px )si la largeur de l'appareil est inférieure ou égale à 1000px, appliquez le CSS défini 
 dans ce bloc */
 @media only screen and (min-width:768px) and (max-width: 1024px)
 
@@ -556,6 +559,12 @@ dans ce bloc */
 		margin-bottom: 10px;
 	}
 
+
+	h1 /*phrase reservez le menu*/
+	{
+	font-size: 1.9rem;
+	}
+
 	.logo
 	{
 		margin-top: 20px;/* concerne les marges exterieures  */
@@ -568,7 +577,7 @@ dans ce bloc */
 		display: flex;
 		justify-content: center;	
 		background-color: #CECECE;/* Gris Perle*/
-		width: 110%;
+		width: 100%;
     /*box-shadow: 0px 8px 32px blue;/* La 1ère valeur indique le décalage horizontal vers la droite -la 2ème correspond au décalage vertical 
     vers le bas-le chiffre suivant indique la force du dégradé */
     border-top: solid 4px #9E9E9E; /*trait foncé au dessus de Paris Belleville*/
@@ -603,23 +612,25 @@ contenu n'a pas été saisi par l'utilisateur ou par le site même*/
 
 /*section 1 */
 
-h1
-{
-	margin-left: 20px; /* concerne les marges exterieures */
-}
 
 h3
 {
 	color: grey;
 }
 
+
 .reservez
 {
 	background-color: #F2F2F2; /*gris clair*/
 	flex-direction: column;
-	width: 110%;
+	width: 100%;
 	display: flex;	
 	align-items: center;
+}
+
+.hide-desktop /*pour que la phrase ne se coupe pas dans la version tablette*/
+{
+display: none;
 }
 
 .com-bts
@@ -630,12 +641,12 @@ h3
 
 .searchbuttons
 {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	color: white; 
 	border: solid 2px #F2F2F2;
 	border-radius: 25px;
 	height: 3rem;
-	width: 15rem;
+	width: 18rem;
 	padding-left: 15px;/* concerne les marges interieures */
 	padding-right: 15px;
 	margin-bottom: 40px;
@@ -655,29 +666,42 @@ h3
 
 /* Section 2*/
 
+.titre /*mot fonctionnement*/
+{
+	margin-left: 60px;
+	padding-bottom: 10px;
+	font-size: 1.9rem;
+}
+
 .fonct /*bloc : fonctionnement restaurant menu dégustez*/
 {
-    /*display: flex;
-    justify-content: center;
-    /*margin: 40px 0 10px 0;*/
+	display: flex;
+	justify-content: column;
+	margin-top: 20px; /* marges exterieures haut */
+	margin-bottom: 40px;
+	/*margin-left: 15px;
+	margin-right: 20px;*/
+	width: 100%;
+	background-color: white;
 }
 
 .fi /*bloc : restaurant menu dégustez*/
 {
 	display: flex;
-	justify-content: center;
+	/*justify-content: column;*/
 	flex-wrap: wrap; /*les éléments vont à la ligne lorsqu'il n'y a plus la place*/
-
-	margin-bottom: 10px; /* marges exterieures*/
+	margin-bottom: 10px; /* marges exterieures bas*/
 
 }
 
 .fi span /*concerne les mots : les mots restaurant menu dégustez*/
 {
-	display: flex;
+	font-size: 1.3rem;
 	margin-bottom: 10px; /* marges exterieures*/
 	margin-top: 10px;
-	padding-right: 20px; /*pour agrandir le cadre*/
+	padding-left: 15px;/* marges intérieures*/
+	padding-right: 35px; /*pour agrandir le cadre*/
+	font-weight: bold;
 }
 
 .contour /* contour les mots restaurant menu dégustez*/
@@ -686,7 +710,10 @@ h3
 	align-items: center;
 	border: solid 2px #F2F2F2;
 	border-radius: 25px;
-	background-color: white;
+	background-color: #F2F2F2; /*couleur à l'intérieur du contour*/
+	margin-left: -10px;/* marges exterieures*/
+	margin-top: 17px;
+	z-index: 1;
 }
 
 .contour:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -700,84 +727,90 @@ h3
 .fas.fa-mobile-alt /* icone restaurant*/
 {
 	margin-right: 10px; /*marges exterieures à l'interieur du cadre*/
-	margin-left: 10px;
+	margin-left: 7px;
+	padding-left: 15px;
 }
 
 .fas.fa-list-ul /* icone menu*/
 {
 	margin-right: 10px; /*marges exterieures*/
-	margin-left: 10px;
+	margin-left: 7px;
+	padding-left: 15px;
 }
 
 .fas.fa-store /* icone degustez*/
 {
 	margin-right: 10px; /*marges exterieures*/
-	margin-left: 10px;
+	margin-left: 7px;
+	padding-left: 15px;
 }
 
 .number
 {
 	border: #DEEBFF solid 1px;
 	border-radius: 50%;
-    padding: 9px;
+    padding: 10px; /*aggrandis le rond*/
     color: white;
-    font-size: 0.7rem;
-	height: 0.7rem;
-    width: 0.7rem;
+    font-size: 1rem;
+	height: 1.1rem;
+    width: 1rem; /*permets d'augmenter l'ovale du rond*/
     background-color: #9356DC ;/*primaire: violet*/
     text-align: center; /*pour centrer le chiffre*/
-    margin-left: -240px;
-    margin-top: 92px;
-	position: absolute; /*pour que nouveau apparaisse sur l'image*/
+    margin-left: 15px;
+    margin-top: 23px;
+    z-index: 2;
+	/*position: absolute; /*pour que nouveau apparaisse sur l'image*/
 }
+	
 
 
 /*section3 Restaurants*/
 
+.activites /*mot restaurants*/
+{
+	padding-top: 30px;
+	padding-bottom: 10px;
+	margin-left: 60px;
+	font-size: 1.9rem;
+}
 
 .central
 {
-	width: 100%;
-	background-color: red; /*#F2F2F2;*/
+	background-color: #F2F2F2 ;
+}
+
+.center
+{
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%; /*au lieu de 60%*/
 }
 
 .conteneur1/* concerne les restos de la 1ère page */
 {
 	display: flex;
-	flex-direction: column;
-	color: #000000;/*couleur noire*/	
+	flex-wrap: wrap; /*les éléments vont à la ligne lorsqu'il n'y a plus la place*/
+   	color: #000000;/*couleur noire*/	
 	text-align: left;	
-	width: 90%;
-	margin-left: 20px; /*marges exterieures*/
-	margin-right: 18px;
-	background-color: #F2F2F2;
+	margin-left: auto; /*marges exterieures*/
+	margin-right: auto;
+	padding-bottom: 30px;
+	background-color: #F2F2F2; 
+	width: 92%;
 }
 
-.nouveau
-{
-	color: #22780F; /* Vert de vessie*/
-	font-weight: bold;
-	font-size: 1rem;
-	border-radius: 2px;
-	background-color: #99E2D0; /*Vert d'eau*/
-	padding: 10px;/* concerne les marges intérieures */
-	width: 70px;
-	height: 15px;
-	margin-top: -140px;
-	margin-bottom: 120px;
-	margin-left: 260px;
-	/*z-index: 2; /*pour QU'IL APPARAISSE DEVANT L'IMAGE*/
-	position: absolute; /*pour que nouveau apparaisse sur l'image*/
-
-}
 
 .element1 /*La palette du goût et le délice des sens*/
 {  
+	
 	box-shadow: 0px 8px 12px #aaa;
 	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
 	align-self: baseline;/*placement dans la box*/
+	width: 100%;
+	margin-top: 20px;
 	margin-bottom: 25px;/* concerne les marges exterieures bas */
-	padding-bottom: 3px;/* concerne  marge interieure bas  */
+	margin-right: 25px;
+	margin-left: 25px;
 	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
 	qui indique un lien,généralement c'est une main.*/
 	background-color: white;
@@ -786,29 +819,54 @@ h3
 
 .phot /*photo elements */
 {
-	width: 360px;
-	height: 150px;
+	width: 660px;
+	height: 190px;
 	object-fit: cover; /*l'image sera découpée pour s'adapter*/   
 	border-top-right-radius: 15px;
 	border-top-left-radius: 15px;  
 	/* z-index: -1;*/
 }
 
+.nouveau
+{
+	color: #22780F; /* Vert de vessie*/
+	font-weight: bold;
+	font-size: 1.3rem;
+	border-radius: 2px;
+	background-color: #99E2D0; /*Vert d'eau*/
+	padding: 14px;/* concerne les marges intérieures */
+	width: 90px;
+	height: 22px;
+	margin-top: -160px;
+	margin-bottom: 120px;
+	margin-left: 530px;
+	/*z-index: 2; /*pour QU'IL APPARAISSE DEVANT L'IMAGE*/
+	position: absolute; /*pour que nouveau apparaisse sur l'image*/
+
+}
+
 .lieu /*noms des lieux pour activites*/
 {
-	color: #000000;/*couleur noire*/ 
-	font-size: 1.1em;  
+	color: #000000 !important;/*couleur noire*/ 
+	font-size: 1.4em;  
 	font-weight: bold;
-	padding-left: 10px;/* concerne les marges interieures gauche  */
+	padding-left: 15px;/* concerne les marges interieures gauche  */
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: flex;
 	justify-content: space-between;
 }
+
+.ville
+{
+	/*padding-left: 30px;/* concerne les marges interieures gauche */
+	color: #000000 !important;/*couleur noire*/ 
+}
+
 .far.fa-heart /* coeur transparent*/
 {
 	margin-right: 10px;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 }
 
 
@@ -820,7 +878,16 @@ h3
     qui indique un lien,généralement c'est une main.*/
     /*transition: width 2s;
     display: none all 2s;*/
+
 }
+
+.fas.fa-heart.fa-backward:hover /*coeur remplit en violet*/
+{
+	color: #9356DC;
+	/*position: absolute;*/
+	z-index: 2;
+}
+
 
 /*section footer*/
 
@@ -829,14 +896,14 @@ footer
 {
 	background-color: #303030; 
 	flex-direction: column;
-	width: 110%;
+	width: 100%;
+	padding-bottom: 15px;
 }
 
 .foot /* concerne l'alignement footer */
 {
 	display: flex;	
-	margin-left: 20px;
-	
+	margin-left: 60px;
 }
 
 .petitlogo
@@ -846,7 +913,7 @@ footer
 	padding-bottom: 5px;/* concerne  marge interieure bas  */
 	margin-bottom: 10px;
 	font-family: 'Shrikhand', cursive;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 }
 
 h4
@@ -884,15 +951,18 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 .fas.fa-arrow-left /*flèche près du logo*/
 {
-	/*margin-left: 5px;*/
+	/*padding-left: -100px;
+	display: flex;
+	align-items: center;*/
 
 }
 
 /*section 1*/
-.phototoa
+
+.phototoa /*photo du plat*/
 {
-	width: 400px;
-	height: 250px;
+	width: 100%;
+	height: 380px;
 	object-fit: cover; /*l'image sera découpée pour s'adapter*/   
 }
 
@@ -900,18 +970,25 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 /*section 2*/
 
+
 .deuxiemepage
 {
 	background-color: #F2F2F2; /*gris clair*/
 	flex-direction: column;
-	width: 111%;
+	width: 100%;
 	display: flex;	
 	font-weight: bold;
-	border-top-right-radius: 25px;/*ca ne fonctionne pas*/
+	border-top-right-radius: 25px;
 	border-top-left-radius: 25px;
 	margin-top: -50px;/*marges exterieures*/
 	position: absolute; /*pour que le pavé à la française déborde sur la photo*/
+	/*align-items: center;*/
+	/*margin-right: auto;
+	margin-left: auto;*/
+	background-color: #F2F2F2;
+
 }
+
 
 .francaise
 {
@@ -920,9 +997,9 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	font-style:italic;
 	font-family: 'Shrikhand', cursive;
 	display: flex;
-	justify-content: space-between; /*pour que le prix se mette à droite*/
+	justify-content: space-between; /*pour que le coeur se mette à droite*/
 	margin-top: 20px;
-	margin-left: 30px;
+	margin-left: 460px;
 }
 
 
@@ -937,15 +1014,20 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 {
 	display: flex;
 	flex-direction: column;
+
 	color: #000000;/*couleur noire*/	
 	text-align: left;	
-	width: 90%;
+	/*width: 100%;*/
 	background-color: #F2F2F2;
+	margin-left: auto; /*marges exterieures*/
+	margin-right: auto;
 }
 
 
 .element2 /*Les plats de la 2ème page*/
 {  
+	width: 550px;
+	height: 60px;
 	box-shadow: 0px 8px 12px #aaa;
 	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
 	align-self: baseline;/*placement dans la box*/
@@ -958,8 +1040,43 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
 	qui indique un lien,généralement c'est une main.*/
 	background-color: white;
-	width: 350px;
-	height: 50px;
+	
+	animation: fadein 5s; /*le temps que ça met pour apparaître*/
+	-moz-animation: fadein 5s; /* Firefox */
+	-webkit-animation: fadein 5s; /* Safari et Chrome */
+	-o-animation: fadein 5s; /* Opera */
+	
+}
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+
+
+
+
+.element2:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
+{
+    color: #0065FC;
+    
+    cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
+    qui indique un lien,généralement c'est une main.*/
+   /*display: none;*/
+    transition: all 0.5s;/*la propriete +timing */ 
+	margin-left: 50px;
+	width: 200px;
+	height: 110px;
+	background-color: coral;
+	animation: glissement 2s infinite alternate;
+}
+
+.ent /*pour pouvoir centrer le trait sous le mot entrée*/
+{
+padding-left: 30px;	
 }
 
 .entrees
@@ -967,20 +1084,30 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	font-size: 1.4rem;
 	color: #677179; /* Gris de Payne*/
 	font-weight: bold;
-	padding-left: 30px;/* concerne les marges interieures  */
-	border-bottom: 4px solid #99E2D0; width: 15%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de l'entrée*/  
+	padding-left: 0px;/* concerne les marges interieures  */
+	/*margin-left: 30px;*/
+	border-bottom: 4px solid #99E2D0; width: 12%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de l'entrée*/  
 }
 
-
+.pla /*pour pouvoir centrer le trait sous le mot plat*/
+{
+padding-left: 30px;	
+}
 
 .plats /*titre au dessus des plats*/
 {
 	font-size: 1.4rem;
 	color: #677179; /* Gris de Payne*/
 	font-weight: bold;
-	padding-left: 30px;/* concerne les marges interieures  */
+	padding-left: 3px;/* concerne les marges interieures  */
 	font-weight: bold;
-	border-bottom: 4px solid #99E2D0; width: 15%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de plat*/ 
+	border-bottom: 4px solid #99E2D0; width: 8%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de plat*/ 
+
+}
+
+.des /*pour pouvoir centrer le trait sous le mot dessert*/
+{
+padding-left: 30px;	
 }
 
 .desserts
@@ -988,8 +1115,8 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	font-size: 1.4rem;
 	color: #677179; /* Gris de Payne*/
 	font-weight: bold;
-	padding-left: 30px;/* concerne les marges interieures  */
-	border-bottom: 4px solid #99E2D0; width: 15%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de dessert*/ 
+	padding-left: 3px;/* concerne les marges interieures  */
+	border-bottom: 4px solid #99E2D0; width: 13%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de dessert*/ 
 }
 
 .plat /*nom d'un plat*/
@@ -1012,6 +1139,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	margin-right: 10px;
 	color: #000000; /*couleur noire*/
 }
+
 
 .com-btn
 {
@@ -1039,14 +1167,13 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	color: #0065FC;
 	background-color: #F2F2F2;
     cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
-    qui indique un lien,généralement c'est une main.*/
+    qui indique un lien,généralement c'est une main*/
 }
-
 }
 
 
    /*concerne pc*/
-@media only screen and (min-width: 1025px) /*à partir de 1001px*/
+@media only screen and (min-width: 1025px) /*à partir de 1025px*/
 
 {
 
@@ -1111,11 +1238,6 @@ contenu n'a pas été saisi par l'utilisateur ou par le site même*/
 
 /*section 1 */
 
-h1
-{
-	margin-left: 70px; /* concerne les marges exterieures */
-	
-}
 
 h3
 {
@@ -1269,6 +1391,7 @@ display: none;
 .activites /*mot restaurants*/
 {
 	padding-top: 40px;
+	margin-left: 70px;
 }
 
 .central
@@ -1292,7 +1415,7 @@ display: none;
 	margin-right: auto;
 	background-color: #F2F2F2; 
 	width: 92%;
-	padding-left: 100px;
+	/*padding-left: 100px;*/
 }
 
 
@@ -1393,6 +1516,7 @@ footer
 	background-color: #303030; 
 	flex-direction: column;
 	width: 100%;
+	padding-bottom: 15px;
 }
 
 .foot /* concerne l'alignement footer */
