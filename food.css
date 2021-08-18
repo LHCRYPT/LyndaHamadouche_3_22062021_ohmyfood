@@ -1,4 +1,4 @@
-/*Medium devices (mobile/tablette, 760px and up)si la largeur de l'appareil est inférieure ou égale à 768px, appliquez le CSS défini 
+/*Medium devices (mobile/tablette, 576px and up)si la largeur de l'appareil est inférieure ou égale à 768px, appliquez le CSS défini 
 dans ce bloc*/
 @media only screen and (max-width:576px)
 {
@@ -359,7 +359,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 }
 
 
-/*2ème page*/
+/*2ème page PORTABLE*/
 
 /*header*/
 
@@ -368,7 +368,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 /*section 1*/
 .phototoa
 {
-	width: 438px;
+	width: 589px;
 	height: 250px;
 	object-fit: cover; /*l'image sera découpée pour s'adapter*/   
 }
@@ -445,6 +445,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	-webkit-animation: fadein 5s; /* Safari et Chrome */
 	-o-animation: fadein 5s; /* Opera */
 }
+
 @keyframes fadein {
 	from {
 		opacity:0;
@@ -454,26 +455,41 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	}
 }
 
+.ent /*pour pouvoir centrer le trait sous le mot entrée*/
+{
+	padding-left: 30px; 
+	width: 35rem; /*pour aggrandir le trait*/
+}
 
 .entrees
 {
 	font-size: 1.4rem;
 	color: #677179; /* Gris de Payne*/
 	font-weight: bold;
-	padding-left: 30px;/* concerne les marges interieures  */
+	/*padding-left: -30px;/* concerne les marges interieures  */
 	border-bottom: 4px solid #99E2D0; width: 10%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de l'entrée*/  
 }
 
-
+.pla /*pour pouvoir centrer le trait sous le mot plat*/
+{
+	padding-left: 30px; 
+	width: 23rem; /*pour aggrandir le trait*/
+}
 
 .plats /*titre au dessus des plats*/
 {
 	font-size: 1.4rem;
 	color: #677179; /* Gris de Payne*/
 	font-weight: bold;
-	padding-left: 30px;/* concerne les marges interieures  */
+	/*padding-left: -30px;/* concerne les marges interieures  */
 	font-weight: bold;
 	border-bottom: 4px solid #99E2D0; width: 15%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de plat*/ 
+}
+
+.des /*pour pouvoir centrer le trait sous le mot dessert*/
+{
+	padding-left: 30px; 
+	width: 23rem; /*pour aggrandir le trait*/
 }
 
 .desserts
@@ -481,7 +497,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	font-size: 1.4rem;
 	color: #677179; /* Gris de Payne*/
 	font-weight: bold;
-	padding-left: 30px;/* concerne les marges interieures  */
+	/*padding-left: -30px;/* concerne les marges interieures  */
 	border-bottom: 4px solid #99E2D0; width: 15%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de dessert*/ 
 }
 
@@ -677,7 +693,7 @@ display: none;
 .fonct /*bloc : fonctionnement restaurant menu dégustez*/
 {
 	display: flex;
-	justify-content: column;
+	justify-content: center;
 	margin-top: 20px; /* marges exterieures haut */
 	margin-bottom: 40px;
 	/*margin-left: 15px;
@@ -946,7 +962,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 }
 
 
-/*2ème page*/
+/*2ème page TABLETTE*/
 
 /*header*/
 
@@ -1000,7 +1016,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	display: flex;
 	justify-content: space-between; /*pour que le coeur se mette à droite*/
 	margin-top: 20px;
-	margin-left: 460px;
+	margin-left: -40px;
 }
 
 
