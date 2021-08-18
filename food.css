@@ -381,7 +381,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 {
 	background-color: #F2F2F2; /* gris clair*/
 	flex-direction: column;
-	width: 110%;
+	width: 150%;
 	display: flex;	
 	font-weight: bold;
 	margin-top: -50px;/*marges exterieures*/
