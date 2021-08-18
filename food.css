@@ -1621,7 +1621,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	display: flex;
 	justify-content: space-between; /*pour que le coeur se mette à droite*/
 	margin-top: 20px;
-	margin-left: 460px;
+	margin-left: -210px;
 }
 
 
