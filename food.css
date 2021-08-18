@@ -368,7 +368,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 /*section 1*/
 .phototoa
 {
-	width: 400px;
+	width: 438px;
 	height: 250px;
 	object-fit: cover; /*l'image sera découpée pour s'adapter*/   
 }
@@ -379,15 +379,15 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 .deuxiemepage
 {
-	background-color: #F2F2F2; /*gris clair*/
+	background-color: #F2F2F2; /* gris clair*/
 	flex-direction: column;
 	width: 110%;
 	display: flex;	
 	font-weight: bold;
-	border-top-right-radius: 25px;/*ca ne fonctionne pas*/
-	border-top-left-radius: 25px;
 	margin-top: -50px;/*marges exterieures*/
 	position: absolute; /*pour que le pavé à la française déborde sur la photo*/
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
 }
 
 .francaise
@@ -400,7 +400,6 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	justify-content: space-between; /*pour que le prix se mette à droite*/
 	margin-top: 20px;
 	margin-left: 30px;
-	width: 100%;
 }
 
 
@@ -417,8 +416,10 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	flex-direction: column;
 	color: #000000;/*couleur noire*/	
 	text-align: left;	
-	width: 100%;
+	width: 110%;
 	background-color: #F2F2F2;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
 }
 
 
