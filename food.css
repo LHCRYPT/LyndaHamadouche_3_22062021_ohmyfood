@@ -1,6 +1,6 @@
 /*Medium devices (mobile/tablette, 576px and up)si la largeur de l'appareil est inférieure ou égale à 768px, appliquez le CSS défini 
 dans ce bloc*/
-@media only screen and (max-width:576px)
+@media only screen and (max-width:767px)
 {
 
 body /*pour que l'ordi ne mette pas une marge en plus sur toute la page*/
@@ -9,13 +9,15 @@ body /*pour que l'ordi ne mette pas une marge en plus sur toute la page*/
 	font-family: 'Roboto', sans-serif;
 }
 
-header/*logo */
+.header-mobile/*logo */
 {
 	display: flex;
 	justify-content: center;
 	margin-top: 20px;/* concerne les marges exterieures  */
 	margin-bottom: 10px;
 }
+
+
 
 .logo
 {
@@ -284,6 +286,7 @@ h3
 	padding-bottom: 10px;
 	display: flex;
 	justify-content: space-between;
+	/*text-decoration: none;*/
 }
 .far.fa-heart /* coeur transparent*/
 {
@@ -363,7 +366,22 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 /*header*/
 
+header/*logo */
+{
+	display: flex;
+	justify-content: start;
+	margin-top: 20px;/* concerne les marges exterieures  */
+	margin-bottom: 10px;
+	width: 100% !important;
+}
 
+header i
+{
+margin: 20px;
+margin-right: 120px;
+font-size: 2rem;
+color: black;
+}
 
 /*section 1*/
 .phototoa
@@ -558,7 +576,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
     /* Medium devices (tablette, min 768px max 1024px )si la largeur de l'appareil est inférieure ou égale à 1000px, appliquez le CSS défini 
 dans ce bloc */
-@media only screen and (min-width:768px) and (max-width: 1024px)
+@media only screen and (min-width:768px) and (max-width: 1030px)
 
 {
 
@@ -1190,7 +1208,7 @@ padding-left: 30px;
 
 
    /*concerne pc*/
-@media only screen and (min-width: 1025px) /*à partir de 1025px*/
+@media only screen and (min-width: 1031px) /*à partir de 1025px*/
 
 {
 
@@ -1664,27 +1682,30 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 .element2 /*Les plats de la 2ème page*/
 {  
+	display: flex;
 	width: 550px;
-	height: 60px;
+	/*height: 60px;*/
 	box-shadow: 0px 8px 12px #aaa;
 	border-radius: 20px;/* concerne l'arrondi de l'encadrement */
-	align-self: baseline;/*placement dans la box*/
+	/*align-self: baseline;/*placement dans la box*/
 	margin-bottom: 20px;/* concerne les marges exterieures bas */
 	margin-left: 20px;
 	margin-right: 20px;
-	padding-bottom: 14px;/* concerne  marge interieure bas  */
-	padding-top: 14px;
+	
 	padding-left: 10px;
 	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
 	qui indique un lien,généralement c'est une main.*/
 	background-color: white;
+	
 	
 	animation: fadein 5s; /*le temps que ça met pour apparaître*/
 	-moz-animation: fadein 5s; /* Firefox */
 	-webkit-animation: fadein 5s; /* Safari et Chrome */
 	-o-animation: fadein 5s; /* Opera */
 	
+
 }
+
 @keyframes fadein {
 	from {
 		opacity:0;
@@ -1694,23 +1715,63 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	}
 }
 
-
-
-
-.element2:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
+.element2:hover .check
 {
-    color: #0065FC;
-    
-    cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
-    qui indique un lien,généralement c'est une main.*/
-   /*display: none;*/
-    transition: all 0.5s;/*la propriete +timing */ 
-	margin-left: 50px;
-	width: 200px;
-	height: 110px;
-	background-color: coral;
+	width: 70px;
+	
+	background-color: #99E2D0;
+	transition: all 1s;
+margin-left: 10px;
+	display: block;
 	animation: glissement 2s infinite alternate;
+
 }
+
+.check /*coche verte*/
+{
+	width: 0px;
+	
+	padding-top: 44px;
+	color: white;
+	
+border-top-right-radius: 20px;/* concerne l'arrondi de l'encadrement */
+border-bottom-right-radius: 20px;
+
+}
+
+.check i
+{
+	display: none;
+	margin-left: 10px;
+	
+}
+
+
+
+.element2:hover i 
+{
+	display: block;
+	animation: all 0.5s;
+
+}
+
+.element2 .rotate 
+{
+	transform: rotate(0deg);
+}
+
+.element2:hover .rotate 
+{
+transform: rotate(-360deg);
+	transition-duration: 1s;
+}
+
+.element2:hover .prix
+{
+	margin-right: 0px;
+}
+
+
 
 .ent /*pour pouvoir centrer le trait sous le mot entrée*/
 {
@@ -1762,22 +1823,38 @@ padding-left: 30px;
 	font-weight: bold;
 	font-size: 1.4rem;
 	margin-bottom: 5px;/* pour faire l'écart entre le mot du haut et celui d'en bas: les marges interieures */
+
 }
 
+.myplat
+{
+	width: 90%;
+margin-bottom: 14px;/* concerne  marge interieure bas  */
+	margin-top: 14px;
+}
 .saveur
 {
 	color: grey;
 	font-size: 1rem;
 	display: flex;
-	justify-content: space-between; /*pour que le coeur se mette à droite*/
+	
 }
 
 .prix
 {
 	margin-right: 10px;
 	color: #000000; /*couleur noire*/
+
 }
 
+.myprix
+{
+text-align: right;
+width: 10%;
+padding-bottom: 14px;/* concerne  marge interieure bas  */
+	padding-top: 44px;
+
+}
 
 .com-btn
 {
