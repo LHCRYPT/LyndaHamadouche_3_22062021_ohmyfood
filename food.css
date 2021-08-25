@@ -473,6 +473,57 @@ color: black;
 	}
 }
 
+
+.element2:hover .check
+{
+	width: 70px;
+	
+	background-color: #99E2D0;
+	transition: all 1s;
+    margin-left: 10px;
+	display: block;
+	animation: glissement 2s infinite alternate;
+}
+
+.check /*coche verte*/
+{
+	width: 0px;
+	padding-top: 44px;
+	color: white;
+	border-top-right-radius: 20px;/* concerne l'arrondi de l'encadrement */
+	border-bottom-right-radius: 20px;
+}
+
+.check i
+{
+	display: none;
+	margin-left: 10px;
+}
+
+
+.element2:hover i 
+{
+	display: block;
+	animation: all 0.5s;
+}
+
+.element2 .rotate 
+{
+	transform: rotate(0deg);
+}
+
+.element2:hover .rotate 
+{
+	transform: rotate(-360deg);
+	transition-duration: 1s;
+}
+
+.element2:hover .prix
+{
+	margin-right: 0px;
+}
+
+
 .ent /*pour pouvoir centrer le trait sous le mot entrée*/
 {
 	padding-left: 30px; 
@@ -536,7 +587,7 @@ color: black;
 
 .prix
 {
-	margin-right: 10px;
+	margin-right: 0px;
 	color: #000000; /*couleur noire*/
 }
 
@@ -1092,22 +1143,55 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 }
 
 
-
-
-.element2:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
+.element2:hover .check
 {
-    color: #0065FC;
-    
-    cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
-    qui indique un lien,généralement c'est une main.*/
-   /*display: none;*/
-    transition: all 0.5s;/*la propriete +timing */ 
-	margin-left: 50px;
-	width: 200px;
-	height: 110px;
-	background-color: coral;
+	width: 70px;
+	background-color: #99E2D0;
+	transition: all 1s;
+	margin-left: 10px;
+	display: block;
 	animation: glissement 2s infinite alternate;
 }
+
+.check /*coche verte*/
+{
+	width: 0px;
+	padding-top: 44px;
+	color: white;
+	border-top-right-radius: 20px;/* concerne l'arrondi de l'encadrement */
+	border-bottom-right-radius: 20px;
+}
+
+.check i
+{
+	display: none;
+	margin-left: 10px;
+}
+
+
+.element2:hover i 
+{
+	display: block;
+	animation: all 0.5s;
+}
+
+.element2 .rotate 
+{
+	transform: rotate(0deg);
+}
+
+.element2:hover .rotate 
+{
+transform: rotate(-360deg);
+	transition-duration: 1s;
+}
+
+.element2:hover .prix
+{
+	margin-right: 0px;
+}
+
+
 
 .ent /*pour pouvoir centrer le trait sous le mot entrée*/
 {
