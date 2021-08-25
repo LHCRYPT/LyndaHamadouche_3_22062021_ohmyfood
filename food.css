@@ -449,8 +449,8 @@ color: black;
 	margin-bottom: 20px;/* concerne les marges exterieures bas */
 	margin-left: 20px;
 	margin-right: 20px;
-	padding-bottom: 14px;/* concerne  marge interieure bas  */
-	padding-top: 14px;
+	padding-bottom: 40px;/* concerne  marge interieure bas  */
+	padding-top: 10px;
 	padding-left: 10px;
 	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
 	qui indique un lien,généralement c'est une main.*/
@@ -474,15 +474,16 @@ color: black;
 }
 
 
-.element2:hover .check
+.element2:hover .check /*carré vert qui tourne quand on lique sur le prix*/
 {
 	width: 70px;
-	
 	background-color: #99E2D0;
 	transition: all 1s;
     margin-left: 10px;
 	display: block;
 	animation: glissement 2s infinite alternate;
+	/*margin-left: 490px;
+	margin-top: -44px;*/
 }
 
 .check /*coche verte*/
@@ -555,6 +556,21 @@ color: black;
 	border-bottom: 4px solid #99E2D0; width: 15%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de plat*/ 
 }
 
+.myplat
+{
+	width: 90%;
+	margin-bottom: 14px;/* concerne  marge interieure bas  */
+	margin-top: 14px;
+}
+
+
+.plat /*nom d'un plat*/
+{
+	font-weight: bold;
+	font-size: 1.4rem;
+	margin-bottom: 5px;/* pour faire l'écart entre le mot du haut et celui d'en bas: les marges interieures */
+}
+
 .des /*pour pouvoir centrer le trait sous le mot dessert*/
 {
 	padding-left: 30px; 
@@ -570,12 +586,6 @@ color: black;
 	border-bottom: 4px solid #99E2D0; width: 15%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de dessert*/ 
 }
 
-.plat /*nom d'un plat*/
-{
-	font-weight: bold;
-	font-size: 1.4rem;
-	margin-bottom: 5px;/* pour faire l'écart entre le mot du haut et celui d'en bas: les marges interieures */
-}
 
 .saveur
 {
@@ -589,6 +599,15 @@ color: black;
 {
 	margin-right: 0px;
 	color: #000000; /*couleur noire*/
+}
+
+.myprix
+{
+	text-align: right;
+	width: 10%;
+	padding-bottom: 14px;/* concerne  marge interieure bas  */
+	margin-top: -34px;
+	margin-left: 360px;
 }
 
 .com-btn
@@ -1120,8 +1139,8 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	margin-bottom: 20px;/* concerne les marges exterieures bas */
 	margin-left: 20px;
 	margin-right: 20px;
-	padding-bottom: 14px;/* concerne  marge interieure bas  */
-	padding-top: 14px;
+	padding-bottom: 24px;/* concerne  marge interieure bas  */
+	padding-top: 10px;
 	padding-left: 10px;
 	cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
 	qui indique un lien,généralement c'est une main.*/
@@ -1224,6 +1243,21 @@ padding-left: 30px;
 
 }
 
+.plat /*nom d'un plat*/
+{
+	font-weight: bold;
+	font-size: 1.4rem;
+	margin-bottom: 5px;/* pour faire l'écart entre le mot du haut et celui d'en bas: les marges interieures */
+}
+
+.myplat
+{
+	width: 90%;
+	margin-bottom: 0px;/* concerne  marge interieure bas  */
+	margin-top: 14px;
+	padding-bottom: 14px;
+}
+
 .des /*pour pouvoir centrer le trait sous le mot dessert*/
 {
 padding-left: 30px;	
@@ -1238,12 +1272,7 @@ padding-left: 30px;
 	border-bottom: 4px solid #99E2D0; width: 13%;  /*pour qu'il y ait un trait Vert d'eau* au dessous de dessert*/ 
 }
 
-.plat /*nom d'un plat*/
-{
-	font-weight: bold;
-	font-size: 1.4rem;
-	margin-bottom: 5px;/* pour faire l'écart entre le mot du haut et celui d'en bas: les marges interieures */
-}
+
 
 .saveur
 {
@@ -1251,14 +1280,26 @@ padding-left: 30px;
 	font-size: 1rem;
 	display: flex;
 	justify-content: space-between; /*pour que le coeur se mette à droite*/
+
 }
 
 .prix
 {
-	margin-right: 10px;
+	/*margin-right: 20px;*/
 	color: #000000; /*couleur noire*/
+	
 }
 
+.myprix
+{
+	text-align: right;
+	/*width: 10%;*/
+	padding-bottom: 14px;/* concerne  marge interieure bas  */
+	padding-top: -50px;
+	/*height: 50px;*/
+	/*height: 182px;*/
+	width: 90%;
+}
 
 .com-btn
 {
@@ -1805,7 +1846,7 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 	
 	background-color: #99E2D0;
 	transition: all 1s;
-margin-left: 10px;
+	margin-left: 10px;
 	display: block;
 	animation: glissement 2s infinite alternate;
 
@@ -1814,20 +1855,16 @@ margin-left: 10px;
 .check /*coche verte*/
 {
 	width: 0px;
-	
 	padding-top: 44px;
 	color: white;
-	
-border-top-right-radius: 20px;/* concerne l'arrondi de l'encadrement */
-border-bottom-right-radius: 20px;
-
+	border-top-right-radius: 20px;/* concerne l'arrondi de l'encadrement */
+	border-bottom-right-radius: 20px;
 }
 
 .check i
 {
 	display: none;
 	margin-left: 10px;
-	
 }
 
 
@@ -1836,7 +1873,6 @@ border-bottom-right-radius: 20px;
 {
 	display: block;
 	animation: all 0.5s;
-
 }
 
 .element2 .rotate 
@@ -1913,7 +1949,7 @@ padding-left: 30px;
 .myplat
 {
 	width: 90%;
-margin-bottom: 14px;/* concerne  marge interieure bas  */
+	margin-bottom: 14px;/* concerne  marge interieure bas  */
 	margin-top: 14px;
 }
 .saveur
@@ -1928,16 +1964,14 @@ margin-bottom: 14px;/* concerne  marge interieure bas  */
 {
 	margin-right: 10px;
 	color: #000000; /*couleur noire*/
-
 }
 
 .myprix
 {
-text-align: right;
-width: 10%;
-padding-bottom: 14px;/* concerne  marge interieure bas  */
+	text-align: right;
+	width: 10%;
+	padding-bottom: 14px;/* concerne  marge interieure bas  */
 	padding-top: 44px;
-
 }
 
 .com-btn
