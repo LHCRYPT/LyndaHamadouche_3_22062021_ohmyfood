@@ -286,24 +286,76 @@ h3
 	padding-bottom: 10px;
 	display: flex;
 	justify-content: space-between;
-	/*text-decoration: none;*/
 }
-.far.fa-heart /* coeur transparent*/
+
+.element1:hover .fas.fa-heart /*carré vert qui tourne quand on lique sur le prix*/
 {
-	margin-right: 10px;
+    width: 70px;
+    /*background-color: #99E2D0;*/
+    transition: all 1s;
+    margin-left: 10px;
+    display: block;
+    animation: linear-gradient(to bottom,#DF73FF 45%,#6600FF) 2s infinite alternate;
+}
+
+
+.coeur i
+{
+    display: none;
+    margin-left: 10px;
+}
+
+
+.element1:hover i 
+{
+    display: block;
+    animation: all 0.5s;
+}
+
+.element1 .plein 
+{
+    background:linear-gradient(to bottom,#DF73FF 45%,#6600FF); /*dégradé linéaire couleur Héliotrope-Bleu persan */
+}
+
+.element1:hover .plein 
+{
+    background:linear-gradient(to bottom,#DF73FF 45%,#6600FF); /*dégradé linéaire couleur Héliotrope-Bleu persan */
+    transition-duration: 1s;
+}
+
+.element1:hover .far.fa-heart
+{
+    margin-right: 0px;
+}
+
+.coeur /*coeur vide*/
+{
+	text-align: right;
+    margin-top: -10px;
+    margin-left: 120px;
 	font-size: 1.3rem;
 }
 
-
-.far.fa-heart:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
+.coeur:hover .plein /*coeur plein*/
 {
-	color: #9356DC; /*violet PROBLEME NE SE REMPLIT PAS EN VIOLET : far fa-heart*/
-	/*background-color: #9356DC;*/
+/*color: #9356DC;*/
+background:linear-gradient(to bottom,#DF73FF 45%,#6600FF); /*dégradé linéaire couleur Héliotrope-Bleu persan */
+transition-duration: 1s;
+}
+
+.fas.fa-heart
+{
+    /*color: #9356DC; /*violet PROBLEME NE SE REMPLIT PAS EN VIOLET : far fa-heart*/
+    /*background-color: #9356DC;*/
     cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
     qui indique un lien,généralement c'est une main.*/
-    /*transition: width 2s;
-    display: none all 2s;*/
+    
+    display: none;
+    /*background:linear-gradient(to bottom,#DF73FF 45%,#6600FF); /*dégradé linéaire couleur Héliotrope-Bleu persan */
+/*transition-duration: 1s;*/
 }
+
+
 
 /*section footer*/
 
@@ -377,10 +429,10 @@ header/*logo */
 
 header i
 {
-margin: 20px;
-margin-right: 120px;
-font-size: 2rem;
-color: black;
+	margin-left: 15px;
+	margin-right: 120px;
+	font-size: 2rem;
+	color: black;
 }
 
 /*section 1*/
@@ -421,10 +473,10 @@ color: black;
 }
 
 
-.far.fa-heart.restCard__icon--empty
+.far.fa-heart
 {
 	margin-right: 43px;
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	margin-top: 10px;
 }
 
@@ -1054,13 +1106,24 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 
 /*header*/
 
-.fas.fa-arrow-left /*flèche près du logo*/
-{
-	/*padding-left: -100px;
-	display: flex;
-	align-items: center;*/
 
+header/*logo */
+{
+	display: flex;
+	justify-content: start;
+	margin-top: 20px;/* concerne les marges exterieures  */
+	margin-bottom: 10px;
+	width: 100% !important;
 }
+
+header i /*pour que la flèche soit mise à gauche*/
+{
+	margin: 20px;
+	margin-right: 230px;
+	font-size: 2rem;
+	color: black;
+}
+
 
 /*section 1*/
 
@@ -1726,17 +1789,28 @@ h4:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'enca
 }
 
 
-/*2ème page*/
+/*2ème page PC */
+
 
 /*header*/
 
-.fas.fa-arrow-left /*flèche près du logo*/
+header/*logo */
 {
-	/*padding-left: -100px;
 	display: flex;
-	align-items: center;*/
-
+	justify-content: start;
+	margin-top: 20px;/* concerne les marges exterieures  */
+	margin-bottom: 10px;
+	width: 100% !important;
 }
+
+header i /*pour que la flèche soit mise à gauche*/
+{
+	margin: 20px;
+	margin-right: 810px;
+	font-size: 2rem;
+	color: black;
+}
+
 
 /*section 1*/
 
