@@ -298,12 +298,10 @@
 	{
 		width: 360px;
 		height: 150px;
-		object-fit: cover;
-		/*l'image sera découpée pour s'adapter*/
+		object-fit: cover;	/*l'image sera découpée pour s'adapter*/
 		border-top-right-radius: 15px;
 		border-top-left-radius: 15px;
-		/* z-index: -1;
-		*/
+		
 	}
 
 	.lieu /*noms des lieux pour activites*/
@@ -313,8 +311,7 @@
 		/*couleur noire*/
 		font-size: 1.1em;
 		font-weight: bold;
-		padding-left: 10px;
-		/* concerne les marges interieures gauche  */
+		padding-left: 10px;	/* concerne les marges interieures gauche  */
 		padding-top: 10px;
 		padding-bottom: 10px;
 		display: flex;
@@ -326,11 +323,8 @@
 	{
 		width: 5px;
 		background: linear-gradient(to bottom,#DF73FF 45%,#6600FF);
-		/*transition: all 2s;
-		*/
 		margin-left: 20px;
-		/*display: block;
-		*/
+		
 	}
 
 	.element1:hover i
@@ -341,14 +335,12 @@
 
 	.element1 .plein
 	{
-		background:linear-gradient(to bottom,#DF73FF 45%,#6600FF);
-		/*dégradé linéaire couleur Héliotrope-Bleu persan */
+		background:linear-gradient(to bottom,#DF73FF 45%,#6600FF);	/*dégradé linéaire couleur Héliotrope-Bleu persan */
 	}
 
 	.element1:hover .plein
 	{
-		background:linear-gradient(to bottom,#DF73FF 45%,#6600FF);
-		/*dégradé linéaire couleur Héliotrope-Bleu persan */
+		background:linear-gradient(to bottom,#DF73FF 45%,#6600FF);	/*dégradé linéaire couleur Héliotrope-Bleu persan */
 		transition-duration: 1s;
 	}
 
@@ -369,39 +361,26 @@
 		text-align: right;
 		margin-top: -10px;
 		margin-left: 120px;
-		/*font-size: 5rem;
-		*/
 		margin-left: 130px;
 	}
 
 	.far.fa-heart /*icone coeur vide*/
 	
 	{
-		cursor: pointer;
-		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
+		cursor: pointer;	/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, 
+		Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
 		display: block;
-		/*padding-left: 100px;
-		*/
-		font-size: 2rem;
-		/*ne fonctionne pas*/
-		/*width: 3rem;
-		/*ne fonctionne pas*/
+		font-size: 2rem;	/*ne fonctionne pas*/
 	}
 
 	.fas.fa-heart /*icone coeur plein*/
 	
 	{
-		/*color: #9356DC;
-		/*violet PROBLEME NE SE REMPLIT PAS EN VIOLET : far fa-heart*/
-		/*background-color: #9356DC;
-		*/
+		
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
 		display: none;
-		/*background:linear-gradient(to bottom,#DF73FF 45%,#6600FF);
-		/*dégradé linéaire couleur Héliotrope-Bleu persan */
-		/*transition-duration: 1s;
-		*/
+		
 	}
 
 	/*section footer*/
@@ -424,8 +403,7 @@
 	{
 		color: white;
 		padding-top: 25px;
-		padding-bottom: 5px;
-		/* concerne  marge interieure bas  */
+		padding-bottom: 5px;	/* concerne  marge interieure bas  */
 		margin-bottom: 10px;
 		font-family: 'Shrikhand', cursive;
 		font-size: 1.3rem;
@@ -441,8 +419,7 @@
 	{
 		color: #0065FC;
 		background-color: #F2F2F2;
-		cursor: pointer;
-		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
+		cursor: pointer;	/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
 	}
 
 	.fas.fa-utensils
@@ -467,8 +444,7 @@
 	{
 		display: flex;
 		justify-content: start;
-		margin-top: 20px;
-		/* concerne les marges exterieures  */
+		margin-top: 20px;	/* concerne les marges exterieures  */
 		margin-bottom: 10px;
 		width: 100% !important;
 	}
@@ -486,8 +462,7 @@
 	{
 		width: 589px;
 		height: 250px;
-		object-fit: cover;
-		/*l'image sera découpée pour s'adapter*/
+		object-fit: cover;	/*l'image sera découpée pour s'adapter*/
 	}
 
 	/*section 2*/
@@ -499,10 +474,8 @@
 		width: 150%;
 		display: flex;
 		font-weight: bold;
-		margin-top: -50px;
-		/*marges exterieures*/
-		position: absolute;
-		/*pour que le pavé à la française déborde sur la photo*/
+		margin-top: -50px;	/*marges exterieures*/
+		position: absolute;	/*pour que le pavé à la française déborde sur la photo*/
 		border-top-right-radius: 25px;
 		border-top-left-radius: 25px;
 	}
@@ -514,16 +487,15 @@
 		font-style:italic;
 		font-family: 'Shrikhand', cursive;
 		display: flex;
-		justify-content: space-between;
-		/*pour que le prix se mette à droite*/
+		justify-content: space-between;	/*pour que le prix se mette à droite*/
 		margin-top: 20px;
-		margin-left: 30px;
+		margin-left: 55px;
 	}
 
 	.far.fa-heart
 	{
-		margin-right: 43px;
-		font-size: 1.4rem;
+		margin-right: 63px;
+		font-size: 1.6rem;
 		margin-top: 10px;
 	}
 
@@ -532,38 +504,33 @@
 	{
 		display: flex;
 		flex-direction: column;
-		color: #000000;
-		/*couleur noire*/
+		color: #000000;	/*couleur noire*/
 		text-align: left;
 		width: 110%;
 		background-color: #F2F2F2;
 		border-top-right-radius: 25px;
 		border-top-left-radius: 25px;
+		
 	}
 
 	.element2 /*Les plats de la 2ème page*/
 	
 	{
+		display: flex;
 		box-shadow: 0px 8px 12px #aaa;
-		border-radius: 20px;
-		/* concerne l'arrondi de l'encadrement */
-		align-self: baseline;
-		/*placement dans la box*/
-		margin-bottom: 20px;
-		/* concerne les marges exterieures bas */
-		margin-left: 20px;
-		margin-right: 20px;
-		padding-bottom: 40px;
-		/* concerne  marge interieure bas  */
-		padding-top: 10px;
+		border-radius: 20px; /* concerne l'arrondi de l'encadrement */
+		align-self: baseline; /*placement dans la box*/
+		margin-bottom: 20px; /* concerne les marges exterieures bas */
+		margin-left: 55px;
+		margin-right: 0px;
+		padding-bottom: 40px;	/* concerne  marge interieure bas  */
 		padding-left: 10px;
-		cursor: pointer;
-		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur qui indique un lien,généralement c'est une main.*/
+		cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, 
+		Le curseur est un pointeur qui indique un lien,généralement c'est une main.*/
 		background-color: white;
-		width: 90%;
+		width: 80%;
 		height: 50px;
-		animation: fadein 5s;
-		/*le temps que ça met pour réapparaître*/
+		animation: fadein 5s;	/*le temps que ça met pour réapparaître*/
 		-moz-animation: fadein 5s;
 		/* Firefox */
 		-webkit-animation: fadein 5s;
@@ -594,25 +561,29 @@
 		margin-left: 10px;
 		display: block;
 		animation: glissement 2s infinite alternate;
-		margin-left: 490px;
-		margin-top: -64px;
+		height: 56px;
 	}
 
 	.check /*coche verte*/
 	
 	{
 		width: 0px;
-		padding-top: 44px;
-		color: white;
-		border-top-right-radius: 20px;
-		/* concerne l'arrondi de l'encadrement */
+		padding-top: 35px;
+		color: #99E2D0;
+		border-top-right-radius: 20px;	/* concerne l'arrondi de l'encadrement */
 		border-bottom-right-radius: 20px;
+		padding-left: 20px;
 	}
 
-	.check i
+	.check i /*rond*/
 	{
 		display: none;
 		margin-left: 10px;
+		border: solid 2px none;
+		border-radius: 80%;
+		padding: 7px;
+		background-color: white;
+		margin-right: 30px;
 	}
 
 	.element2:hover i
@@ -640,9 +611,8 @@
 	.ent /*pour pouvoir centrer le trait sous le mot entrée*/
 	
 	{
-		padding-left: 30px;
-		width: 35rem;
-		/*pour aggrandir le trait*/
+		padding-left: 55px;
+		width: 35rem;	/*pour aggrandir le trait*/
 	}
 
 	.entrees
@@ -651,41 +621,32 @@
 		color: #677179;
 		/* Gris de Payne*/
 		font-weight: bold;
-		/*padding-left: -30px;
-		/* concerne les marges interieures  */
 		border-bottom: 4px solid #99E2D0;
-		width: 10%;
-		/*pour qu'il y ait un trait Vert d'eau* au dessous de l'entrée*/
+		width: 10%;	/*pour qu'il y ait un trait Vert d'eau* au dessous de l'entrée*/
 	}
 
 	.pla /*pour pouvoir centrer le trait sous le mot plat*/
 	
 	{
-		padding-left: 30px;
-		width: 23rem;
-		/*pour aggrandir le trait*/
+		padding-left: 55px;
+		width: 23rem;/*pour aggrandir le trait*/
 	}
 
 	.plats /*titre au dessus des plats*/
 	
 	{
 		font-size: 1.4rem;
-		color: #677179;
-		/* Gris de Payne*/
+		color: #677179;	/* Gris de Payne*/
 		font-weight: bold;
-		/*padding-left: -30px;
-		/* concerne les marges interieures  */
 		font-weight: bold;
 		border-bottom: 4px solid #99E2D0;
-		width: 15%;
-		/*pour qu'il y ait un trait Vert d'eau* au dessous de plat*/
+		width: 15%;	/*pour qu'il y ait un trait Vert d'eau* au dessous de plat*/
 	}
 
 	.myplat
 	{
-		width: 90%;
-		margin-bottom: 14px;
-		/* concerne  marge interieure bas  */
+		width: 80%;
+		margin-bottom: 14px;/* concerne  marge interieure bas  */
 		margin-top: 14px;
 	}
 
@@ -694,29 +655,23 @@
 	{
 		font-weight: bold;
 		font-size: 1.4rem;
-		margin-bottom: 5px;
-		/* pour faire l'écart entre le mot du haut et celui d'en bas: les marges interieures */
+		margin-bottom: 5px;	/* pour faire l'écart entre le mot du haut et celui d'en bas: les marges interieures */
 	}
 
 	.des /*pour pouvoir centrer le trait sous le mot dessert*/
 	
 	{
-		padding-left: 30px;
-		width: 23rem;
-		/*pour aggrandir le trait*/
+		padding-left: 55px;
+		width: 23rem; /*pour aggrandir le trait*/
 	}
 
 	.desserts
 	{
 		font-size: 1.4rem;
-		color: #677179;
-		/* Gris de Payne*/
+		color: #677179;	/* Gris de Payne*/
 		font-weight: bold;
-		/*padding-left: -30px;
-		/* concerne les marges interieures  */
 		border-bottom: 4px solid #99E2D0;
-		width: 15%;
-		/*pour qu'il y ait un trait Vert d'eau* au dessous de dessert*/
+		width: 15%;	/*pour qu'il y ait un trait Vert d'eau* au dessous de dessert*/
 	}
 
 	.saveur
@@ -724,32 +679,27 @@
 		color: grey;
 		font-size: 1rem;
 		display: flex;
-		justify-content: space-between;
-		/*pour que le coeur se mette à droite*/
+		justify-content: space-between;	/*pour que le coeur se mette à droite*/
 	}
 
 	.prix
 	{
-		margin-right: 0px;
-		color: #000000;
-		/*couleur noire*/
+		color: #000000;	/*couleur noire*/
 	}
 
 	.myprix
 	{
 		text-align: right;
 		width: 10%;
-		padding-bottom: 14px;
-		/* concerne  marge interieure bas  */
-		margin-top: -34px;
-		margin-left: 360px;
+		padding-bottom: 14px;	/* concerne  marge interieure bas  */
+		padding-top: 35px;
+		height: 70px;
 	}
 
 	.com-btn
 	{
 		display: flex;
-		justify-content: center;
-		/*cela centre le mot dans son contour*/
+		justify-content: center; /*cela centre le mot dans son contour*/
 	}
 
 	.searchbutton /*bouton commander*/
@@ -762,7 +712,7 @@
 		width: 12rem;
 		font-size: 1.1rem;
 		margin-top: 40px;
-		margin-left: 20px;
+		margin-left: 5px;
 		margin-bottom: 40px;
 		background:linear-gradient(to bottom,#DF73FF 45%,#6600FF);
 		/*dégradé linéaire couleur Héliotrope-Bleu persan */
@@ -777,7 +727,21 @@
 		cursor: pointer;
 		/* définit la forme du curseur lorsque le pointeur est au-dessus de l'element, Le curseur est un pointeurqui indique un lien,generalement c'est une main. */
 	}
+
+	/*section footer*/
+	
+
+	.fot /* concerne l'alignement footer */
+	
+	{
+		display: flex;
+		margin-left: 55px;
+	}
+
+	
 }
+
+
 
 /* Medium devices (tablette, min 768px max 1024px )si la largeur de l'appareil est inférieure ou égale à 1000px, appliquez le CSS défini dans ce bloc */
 @media only screen and (min-width:768px) and (max-width: 1030px)
@@ -1300,7 +1264,7 @@
 		justify-content: space-between;
 		/*pour que le coeur se mette à droite*/
 		margin-top: 20px;
-		margin-left: -40px;
+		margin-left: 100px;
 	}
 
 	.far.fa-heart.restCard__icon--empty
@@ -1315,40 +1279,33 @@
 	{
 		display: flex;
 		flex-direction: column;
-		color: #000000;
-		/*couleur noire*/
+		color: #000000;	/*couleur noire*/
 		text-align: left;
-		/*width: 100%;
-		*/
+		width: 96%;
 		background-color: #F2F2F2;
-		margin-left: auto;
-		/*marges exterieures*/
-		margin-right: auto;
+		border-top-right-radius: 25px;
+		border-top-left-radius: 25px;
+		
 	}
 
 	.element2 /*Les plats de la 2ème page*/
 	
 	{
-		width: 550px;
-		height: 60px;
+		display: flex;
 		box-shadow: 0px 8px 12px #aaa;
-		border-radius: 20px;
-		/* concerne l'arrondi de l'encadrement */
-		align-self: baseline;
-		/*placement dans la box*/
-		margin-bottom: 20px;
-		/* concerne les marges exterieures bas */
-		margin-left: 20px;
-		margin-right: 20px;
-		padding-bottom: 24px;
-		/* concerne  marge interieure bas  */
-		padding-top: 10px;
+		border-radius: 20px; /* concerne l'arrondi de l'encadrement */
+		align-self: baseline; /*placement dans la box*/
+		margin-bottom: 20px; /* concerne les marges exterieures bas */
+		margin-left: 85px;
+		margin-right: 0px;
+		padding-bottom: 40px;	/* concerne  marge interieure bas  */
 		padding-left: 10px;
-		cursor: pointer;
-		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur qui indique un lien,généralement c'est une main.*/
+		cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, 
+		Le curseur est un pointeur qui indique un lien,généralement c'est une main.*/
 		background-color: white;
-		animation: fadein 5s;
-		/*le temps que ça met pour apparaître*/
+		width: 80%;
+		height: 50px;
+		animation: fadein 5s;	/*le temps que ça met pour réapparaître*/
 		-moz-animation: fadein 5s;
 		/* Firefox */
 		-webkit-animation: fadein 5s;
@@ -1370,7 +1327,8 @@
 		}
 	}
 
-	.element2:hover .check
+	.element2:hover .check /*carré vert qui tourne quand on lique sur le prix*/
+	
 	{
 		width: 70px;
 		background-color: #99E2D0;
@@ -1378,23 +1336,30 @@
 		margin-left: 10px;
 		display: block;
 		animation: glissement 2s infinite alternate;
+		height: 56px;
 	}
 
 	.check /*coche verte*/
 	
 	{
 		width: 0px;
-		padding-top: 44px;
-		color: white;
-		border-top-right-radius: 20px;
-		/* concerne l'arrondi de l'encadrement */
+		padding-top: 35px;
+		color: #99E2D0;
+		border-top-right-radius: 20px;	/* concerne l'arrondi de l'encadrement */
 		border-bottom-right-radius: 20px;
+		padding-left: 20px;
 	}
 
-	.check i
+	.check i /*rond*/
 	{
 		display: none;
 		margin-left: 10px;
+		border: solid 2px none;
+		border-radius: 80%;
+		padding: 7px;
+		color: none;
+		background-color: white;
+		margin-right: 30px;
 	}
 
 	.element2:hover i
@@ -1422,7 +1387,7 @@
 	.ent /*pour pouvoir centrer le trait sous le mot entrée*/
 	
 	{
-		padding-left: 30px;
+		padding-left: 100px;
 	}
 
 	.entrees
@@ -1443,7 +1408,7 @@
 	.pla /*pour pouvoir centrer le trait sous le mot plat*/
 	
 	{
-		padding-left: 30px;
+		padding-left: 100px;
 	}
 
 	.plats /*titre au dessus des plats*/
@@ -1482,7 +1447,7 @@
 	.des /*pour pouvoir centrer le trait sous le mot dessert*/
 	
 	{
-		padding-left: 30px;
+		padding-left: 100px;
 	}
 
 	.desserts
@@ -1518,16 +1483,12 @@
 	.myprix
 	{
 		text-align: right;
-		/*width: 10%;
-		*/
-		padding-bottom: 14px;
-		/* concerne  marge interieure bas  */
-		/*height: 50px;
-		*/
-		/*height: 182px;
-		*/
-		width: 90%;
+		width: 10%;
+		padding-bottom: 14px;	/* concerne  marge interieure bas  */
+		padding-top: 35px;
+		height: 70px;
 	}
+
 
 	.com-btn
 	{
@@ -1561,6 +1522,15 @@
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main*/
 	}
+
+/*section footer*/
+.fot /* concerne l'alignement footer */
+	
+	{
+		display: flex;
+		margin-left: 100px;
+	}
+
 }
 
 /*concerne pc*/
@@ -2068,12 +2038,12 @@
 		justify-content: space-between;
 		/*pour que le coeur se mette à droite*/
 		margin-top: 20px;
-		margin-left: -210px;
+		margin-left: 55px;
 	}
 
 	.far.fa-heart.restCard__icon--empty
 	{
-		margin-right: 20px;
+		margin-right: 30px;
 		font-size: 1.3rem;
 		margin-top: 10px;
 	}
@@ -2083,39 +2053,33 @@
 	{
 		display: flex;
 		flex-direction: column;
-		color: #000000;
-		/*couleur noire*/
+		color: #000000;	/*couleur noire*/
 		text-align: left;
-		/*width: 100%;
-		*/
+		width: 96%;
 		background-color: #F2F2F2;
-		margin-left: auto;
-		/*marges exterieures*/
-		margin-right: auto;
+		border-top-right-radius: 25px;
+		border-top-left-radius: 25px;
+		
 	}
 
 	.element2 /*Les plats de la 2ème page*/
 	
 	{
 		display: flex;
-		width: 550px;
-		/*height: 60px;
-		*/
 		box-shadow: 0px 8px 12px #aaa;
-		border-radius: 20px;
-		/* concerne l'arrondi de l'encadrement */
-		/*align-self: baseline;
-		/*placement dans la box*/
-		margin-bottom: 20px;
-		/* concerne les marges exterieures bas */
-		margin-left: 20px;
-		margin-right: 20px;
+		border-radius: 20px; /* concerne l'arrondi de l'encadrement */
+		align-self: baseline; /*placement dans la box*/
+		margin-bottom: 20px; /* concerne les marges exterieures bas */
+		margin-left: 585px;
+		margin-right: 0px;
+		padding-bottom: 40px;	/* concerne  marge interieure bas  */
 		padding-left: 10px;
-		cursor: pointer;
-		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur qui indique un lien,généralement c'est une main.*/
+		cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, 
+		Le curseur est un pointeur qui indique un lien,généralement c'est une main.*/
 		background-color: white;
-		animation: fadein 5s;
-		/*le temps que ça met pour apparaître*/
+		width: 40%;
+		height: 50px;
+		animation: fadein 5s;	/*le temps que ça met pour réapparaître*/
 		-moz-animation: fadein 5s;
 		/* Firefox */
 		-webkit-animation: fadein 5s;
@@ -2137,7 +2101,8 @@
 		}
 	}
 
-	.element2:hover .check
+	.element2:hover .check /*carré vert qui tourne quand on lique sur le prix*/
+	
 	{
 		width: 70px;
 		background-color: #99E2D0;
@@ -2145,23 +2110,30 @@
 		margin-left: 10px;
 		display: block;
 		animation: glissement 2s infinite alternate;
+		height: 56px;
 	}
 
 	.check /*coche verte*/
 	
 	{
 		width: 0px;
-		padding-top: 44px;
-		color: white;
-		border-top-right-radius: 20px;
-		/* concerne l'arrondi de l'encadrement */
+		padding-top: 35px;
+		color: #99E2D0;
+		border-top-right-radius: 20px;	/* concerne l'arrondi de l'encadrement */
 		border-bottom-right-radius: 20px;
+		padding-left: 20px;
 	}
 
-	.check i
+	.check i /*rond*/
 	{
 		display: none;
 		margin-left: 10px;
+		border: solid 2px none;
+		border-radius: 80%;
+		padding: 7px;
+		color: none;
+		background-color: white;
+		margin-right: 30px;
 	}
 
 	.element2:hover i
@@ -2186,10 +2158,12 @@
 		margin-right: 0px;
 	}
 
+
 	.ent /*pour pouvoir centrer le trait sous le mot entrée*/
 	
 	{
-		padding-left: 30px;
+		padding-left: 585px;
+		width: 35rem;	/*pour aggrandir le trait*/
 	}
 
 	.entrees
@@ -2199,9 +2173,8 @@
 		/* Gris de Payne*/
 		font-weight: bold;
 		padding-left: 0px;
+		margin-bottom: 20px;
 		/* concerne les marges interieures  */
-		/*margin-left: 30px;
-		*/
 		border-bottom: 4px solid #99E2D0;
 		width: 12%;
 		/*pour qu'il y ait un trait Vert d'eau* au dessous de l'entrée*/
@@ -2210,7 +2183,8 @@
 	.pla /*pour pouvoir centrer le trait sous le mot plat*/
 	
 	{
-		padding-left: 30px;
+		padding-left: 585px;
+		width: 35rem;	/*pour aggrandir le trait*/
 	}
 
 	.plats /*titre au dessus des plats*/
@@ -2231,7 +2205,8 @@
 	.des /*pour pouvoir centrer le trait sous le mot dessert*/
 	
 	{
-		padding-left: 30px;
+		padding-left: 585px;
+		width: 35rem;	/*pour aggrandir le trait*/
 	}
 
 	.desserts
@@ -2273,7 +2248,8 @@
 
 	.prix
 	{
-		margin-right: 10px;
+		/*margin-right: 20px;
+		*/
 		color: #000000;
 		/*couleur noire*/
 	}
@@ -2282,11 +2258,12 @@
 	{
 		text-align: right;
 		width: 10%;
-		padding-bottom: 14px;
-		/* concerne  marge interieure bas  */
-		padding-top: 44px;
+		padding-bottom: 14px;	/* concerne  marge interieure bas  */
+		padding-top: 35px;
+		height: 70px;
 	}
-
+	
+	
 	.com-btn
 	{
 		display: flex;
@@ -2304,7 +2281,7 @@
 		width: 12rem;
 		font-size: 1.1rem;
 		margin-top: 40px;
-		margin-left: 20px;
+		margin-left: 70px;
 		margin-bottom: 40px;
 		background:linear-gradient(to bottom,#DF73FF 45%,#6600FF);
 		/*dégradé linéaire couleur Héliotrope-Bleu persan */
@@ -2319,4 +2296,13 @@
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main*/
 	}
+
+	/*section footer*/
+.fot /* concerne l'alignement footer */
+	
+	{
+		display: flex;
+		margin-left: 55px;
+	}
+
 }
