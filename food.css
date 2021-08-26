@@ -231,7 +231,7 @@ h3
 	text-align: left;	
 	width: 90%;
 	margin-left: 20px; /*marges exterieures*/
-	margin-right: 18px;
+	margin-right: 20px;
 	background-color: #F2F2F2;
 }
 
@@ -290,12 +290,36 @@ h3
 
 .element1:hover .fas.fa-heart /*carré vert qui tourne quand on lique sur le prix*/
 {
-    width: 70px;
-    /*background-color: #99E2D0;*/
-    transition: all 1s;
-    margin-left: 10px;
+    width: 5px;
+    background: linear-gradient(to bottom,#DF73FF 45%,#6600FF);
+    /*transition: all 2s;*/
+    margin-left: 20px;
+    /*display: block;*/
+ }
+
+
+.element1:hover i 
+{
     display: block;
-    animation: linear-gradient(to bottom,#DF73FF 45%,#6600FF) 2s infinite alternate;
+    animation: all 2s;
+}
+
+.element1 .plein 
+{
+    background:linear-gradient(to bottom,#DF73FF 45%,#6600FF); /*dégradé linéaire couleur Héliotrope-Bleu persan */
+
+}
+
+.element1:hover .plein 
+{
+    background:linear-gradient(to bottom,#DF73FF 45%,#6600FF); /*dégradé linéaire couleur Héliotrope-Bleu persan */
+    transition-duration: 1s;
+
+}
+
+.element1:hover .coeur
+{
+    margin-right: 0px;
 }
 
 
@@ -305,52 +329,36 @@ h3
     margin-left: 10px;
 }
 
-
-.element1:hover i 
-{
-    display: block;
-    animation: all 0.5s;
-}
-
-.element1 .plein 
-{
-    background:linear-gradient(to bottom,#DF73FF 45%,#6600FF); /*dégradé linéaire couleur Héliotrope-Bleu persan */
-}
-
-.element1:hover .plein 
-{
-    background:linear-gradient(to bottom,#DF73FF 45%,#6600FF); /*dégradé linéaire couleur Héliotrope-Bleu persan */
-    transition-duration: 1s;
-}
-
-.element1:hover .far.fa-heart
-{
-    margin-right: 0px;
-}
-
 .coeur /*coeur vide*/
 {
 	text-align: right;
     margin-top: -10px;
     margin-left: 120px;
-	font-size: 1.3rem;
+	/*font-size: 5rem;*/
+	margin-left: 130px;
 }
 
-.coeur:hover .plein /*coeur plein*/
+
+.far.fa-heart /*icone coeur vide*/
 {
-/*color: #9356DC;*/
-background:linear-gradient(to bottom,#DF73FF 45%,#6600FF); /*dégradé linéaire couleur Héliotrope-Bleu persan */
-transition-duration: 1s;
+         
+    cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
+    qui indique un lien,généralement c'est une main.*/
+    display: block;
+    /*padding-left: 100px;*/
+    font-size: 2rem; /*ne fonctionne pas*/
+    /*width: 3rem; /*ne fonctionne pas*/
+
 }
 
-.fas.fa-heart
+.fas.fa-heart /*icone coeur plein*/ 
 {
     /*color: #9356DC; /*violet PROBLEME NE SE REMPLIT PAS EN VIOLET : far fa-heart*/
     /*background-color: #9356DC;*/
     cursor: pointer; /*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur 
     qui indique un lien,généralement c'est une main.*/
-    
     display: none;
+  
     /*background:linear-gradient(to bottom,#DF73FF 45%,#6600FF); /*dégradé linéaire couleur Héliotrope-Bleu persan */
 /*transition-duration: 1s;*/
 }
@@ -534,8 +542,8 @@ header i
     margin-left: 10px;
 	display: block;
 	animation: glissement 2s infinite alternate;
-	/*margin-left: 490px;
-	margin-top: -44px;*/
+	margin-left: 490px;
+	margin-top: -64px;
 }
 
 .check /*coche verte*/
@@ -1358,7 +1366,7 @@ padding-left: 30px;
 	text-align: right;
 	/*width: 10%;*/
 	padding-bottom: 14px;/* concerne  marge interieure bas  */
-	padding-top: -50px;
+	
 	/*height: 50px;*/
 	/*height: 182px;*/
 	width: 90%;
