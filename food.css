@@ -775,6 +775,7 @@
 		/* concerne les marges exterieures  */
 		margin-bottom: 10px;
 		font-family: 'Shrikhand', cursive;
+		margin-left: 295px;
 	}
 
 	.recherche
@@ -796,6 +797,7 @@
 		border: none;
 		padding: 15px;
 		/* pour grossir le rond*/
+		margin-left: 38px;
 	}
 
 	input  /* Paris, Belleville*/
@@ -1221,6 +1223,14 @@
 		color: black;
 	}
 
+	.logos
+	{
+		margin-top: 20px;
+		/* concerne les marges exterieures  */
+		margin-bottom: 10px;
+		font-family: 'Shrikhand', cursive;
+	}
+
 	/*section 1*/
 	.phototoa /*photo du plat*/
 	
@@ -1560,6 +1570,7 @@
 		/* concerne les marges exterieures  */
 		margin-bottom: 10px;
 		font-family: 'Shrikhand', cursive;
+		margin-left: 865px;
 	}
 
 	.recherche
@@ -1581,6 +1592,7 @@
 		border: none;
 		padding: 15px;
 		/* pour grossir le rond*/
+		margin-left: 60px;
 	}
 
 	input  /* Paris, Belleville*/
@@ -1662,7 +1674,7 @@
 	.titre /*mot fonctionnement*/
 	
 	{
-		margin-left: -4px;
+		margin-left: 45px;
 		padding-bottom: 10px;
 	}
 
@@ -1776,7 +1788,7 @@
 	
 	{
 		padding-top: 40px;
-		margin-left: 70px;
+		margin-left: 115px;
 	}
 
 	.central
@@ -1822,7 +1834,7 @@
 		margin-bottom: 25px;
 		/* concerne les marges exterieures bas */
 		margin-right: 25px;
-		margin-left: 25px;
+		margin-left: 65px;
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeur qui indique un lien,généralement c'est une main.*/
 		background-color: white;
@@ -1929,7 +1941,7 @@
 	
 	{
 		display: flex;
-		margin-left: 40px;
+		margin-left: 95px;
 		padding-left: 410px;
 	}
 
