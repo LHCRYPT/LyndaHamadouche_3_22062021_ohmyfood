@@ -318,54 +318,8 @@
 		justify-content: space-between;
 	}
 
-	.element1:hover .fas.fa-heart /*carré vert qui tourne quand on lique sur le prix*/
 	
-	{
-		width: 5px;
-		background: linear-gradient(to bottom,#DF73FF 45%,#6600FF);
-		margin-left: 20px;
-		
-	}
-
-	.element1:hover i
-	{
-		display: block;
-		animation: all 2s;
-	}
-
-	.element1 .plein
-	{
-		background:linear-gradient(to bottom,#DF73FF 45%,#6600FF);	/*dégradé linéaire couleur Héliotrope-Bleu persan */
-	}
-
-	.element1:hover .plein
-	{
-		background:linear-gradient(to bottom,#DF73FF 45%,#6600FF);	/*dégradé linéaire couleur Héliotrope-Bleu persan */
-		transition-duration: 1s;
-	}
-
-	.element1:hover .coeur
-	{
-		margin-right: 0px;
-	}
-
-	.coeur i
-	{
-		display: none;
-		margin-left: 10px;
-	}
-
-	.coeur /*coeur vide*/
-	
-	{
-		text-align: right;
-		margin-top: -10px;
-		margin-left: 120px;
-		margin-left: 130px;
-	}
-
 	.far.fa-heart /*icone coeur vide*/
-	
 	{
 		cursor: pointer;	/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, 
 		Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
@@ -376,11 +330,9 @@
 	.fas.fa-heart /*icone coeur plein*/
 	
 	{
-		
-		cursor: pointer;
-		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
+		cursor: pointer;	/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, 
+		Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
 		display: none;
-		
 	}
 
 	/*section footer*/
@@ -1367,7 +1319,6 @@
 		border: solid 2px none;
 		border-radius: 80%;
 		padding: 7px;
-		color: none;
 		background-color: white;
 		margin-right: 30px;
 	}
@@ -1903,6 +1854,7 @@
 	{
 		margin-right: 10px;
 		font-size: 1.3rem;
+		
 	}
 
 	.far.fa-heart:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -1919,13 +1871,13 @@
 		*/
 	}
 
-	.fas.fa-heart.fa-backward:hover /*coeur remplit en violet*/
+	.fas.fa-heart:hover /*coeur remplit en violet*/
 	
 	{
 		color: #9356DC;
 		/*position: absolute;
 		*/
-		z-index: 2;
+		
 	}
 
 	/*section footer*/
@@ -2143,7 +2095,6 @@
 		border: solid 2px none;
 		border-radius: 80%;
 		padding: 7px;
-		color: none;
 		background-color: white;
 		margin-right: 30px;
 	}
