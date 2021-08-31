@@ -336,14 +336,16 @@
 	}
 
 
-.far.fa-heart  {
+
+.jauge {
     width: 100px;
     height: 200px;
     display: block;
     background-color: #303030;
     position: relative;
 }
-.fas.fa-heart {
+
+.jauge-remplissage {
     transition: all 0.3s linear 0s;
     background-color: #33BEE5;
     width: 100%;
@@ -353,7 +355,7 @@
     bottom: 0;
 }
  
-.far.fa-heart :hover .fas.fa-heart {
+.jauge:hover .jauge-remplissage {
     height: 100%;
 }
 
