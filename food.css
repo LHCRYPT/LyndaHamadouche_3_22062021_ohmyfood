@@ -60,7 +60,10 @@
 		/*Gris Perle*/
 	}
 
-	::placeholder /* couleur noire Paris, Belleville/ Le pseudo-élément ::placeholder représente le texte de substitution  pour un élément <input> ou <textarea>. Cela permet aux développeurs web de personnaliser l'apparence de ce texte.Le texte de substitution est généralement représenté avec une couleur plus claire afin d'indiquer qu'il s'agit d'une suggestion et que ce contenu n'a pas été saisi par l'utilisateur ou par le site même*/
+	::placeholder /* couleur noire Paris, Belleville/ Le pseudo-élément ::placeholder représente le texte de substitution  
+	pour un élément <input> ou <textarea>. Cela permet aux développeurs web de personnaliser l'apparence de ce texte.
+	Le texte de substitution est généralement représenté avec une couleur plus claire afin d'indiquer qu'il s'agit d'une suggestion 
+	et que ce contenu n'a pas été saisi par l'utilisateur ou par le site même*/
 	
 	{
 		color: #000000;
@@ -270,8 +273,6 @@
 		margin-top: -140px;
 		margin-bottom: 120px;
 		margin-left: 260px;
-		/*z-index: 2;
-		/*pour QU'IL APPARAISSE DEVANT L'IMAGE*/
 		position: absolute;
 		/*pour que nouveau apparaisse sur l'image*/
 	}
@@ -319,35 +320,24 @@
 	}
 
 	
-	.far.fa-heart /*icone coeur vide*/
-	{
-		cursor: pointer;	/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, 
-		Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
-		display: block;
-		font-size: 2rem;	/*ne fonctionne pas*/
-	}
-
-	.fas.fa-heart /*icone coeur plein*/
 	
-	{
-		cursor: pointer;	/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, 
-		Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
-		display: none;
-	}
 
 
-
-.jauge {
-    width: 100px;
-    height: 200px;
-    display: block;
-    background-color: #303030;
-    position: relative;
+.coeur 
+{
+    background: linear-gradient(to bottom,#DF73FF 45%,#6600FF);
+    font-size: 1rem;
+    cursor: pointer;
+    
+    /*transform: far.fa-heart;
+    &:hover {
+        transform: fas.fa-heart;
+    }*/
 }
 
-.jauge-remplissage {
+.plein {
     transition: all 0.3s linear 0s;
-    background-color: #33BEE5;
+    background: linear-gradient(to bottom,#DF73FF 45%,#6600FF);
     width: 100%;
     height: 0;
     position: absolute;
@@ -355,9 +345,13 @@
     bottom: 0;
 }
  
-.jauge:hover .jauge-remplissage {
-    height: 100%;
+.coeur:hover .plein {
+    height: 10%;
 }
+
+
+
+
 
 
 	/*section footer*/
@@ -415,7 +409,9 @@
 	}
 
 	/*2ème page PORTABLE*/
+
 	/*header*/
+
 	header/*logo */
 	
 	{
@@ -437,7 +433,7 @@
 	/*section 1*/
 	.phototoa
 	{
-		width: 589px;
+		width: 615px;
 		height: 250px;
 		object-fit: cover;	/*l'image sera découpée pour s'adapter*/
 	}
@@ -483,7 +479,7 @@
 		flex-direction: column;
 		color: #000000;	/*couleur noire*/
 		text-align: left;
-		width: 110%;
+		width: 113%;
 		background-color: #F2F2F2;
 		border-top-right-radius: 25px;
 		border-top-left-radius: 25px;
