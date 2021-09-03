@@ -1092,12 +1092,16 @@
   		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
   		opacity: 0;
   		font-size: 1.5rem;
+  		margin-left: -37px;
+  		margin-top: 30px;
  	}
 
 	.coeur-effet .far /*coeur vide*/
 	{
   		margin-left: -27px;
   		font-size: 1.5rem;
+  		/*margin-left: -27px;*/
+  		/*margin-top: 20px;*/
 	}
 
 	.coeur-effet:hover .fas 
@@ -1105,6 +1109,7 @@
 		opacity: 1;
   		transition: 1s;
   		cursor: pointer;
+
 	}
 
 	.coeur-effet:hover .far 
@@ -1112,8 +1117,8 @@
   		opacity: 0;
   		transition: 1s;
   		cursor: pointer;
-  		margin-left: -27px;
-  		margin-top: 10px;
+  		/*margin-left: -27px;*/
+  		
 
 	}
 
