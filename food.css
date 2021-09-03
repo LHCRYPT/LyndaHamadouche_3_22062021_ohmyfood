@@ -449,25 +449,6 @@
 		border-top-left-radius: 25px;
 	}
 
-	.francaise
-	{
-		font-size: 1.7rem;
-		font-weight: bold;
-		font-style:italic;
-		font-family: 'Shrikhand', cursive;
-		display: flex;
-		justify-content: space-between;	/*pour que le prix se mette à droite*/
-		margin-top: 20px;
-		margin-left: 55px;
-	}
-
-	.far.fa-heart
-	{
-		margin-right: 63px;
-		font-size: 1.6rem;
-		margin-top: 10px;
-	}
-
 	.conteneur2/* concerne la 2ème page*/
 	
 	{
@@ -481,6 +462,88 @@
 		border-top-left-radius: 25px;
 		
 	}
+
+	.francaise 
+	{
+		font-size: 1.7rem;
+		font-weight: bold;
+		font-style:italic;
+		font-family: 'Shrikhand', cursive;
+		display: flex;
+		justify-content: space-between;	/*pour que le prix se mette à droite*/
+		margin-top: 20px;
+		margin-left: 55px;
+	}
+
+	
+
+
+	.coeur-effet .fas /*coeur plein*/
+	{
+  		color: transparent;
+  		background: linear-gradient(#ff79da, #9356dc);
+  		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
+  		opacity: 0;
+  		font-size: 1.5rem;
+  		margin-left: 250px;
+		margin-top: 10px;
+ 	}
+
+	.coeur-effet .far /*coeur vide*/
+	{
+  		margin-right: 70px;
+  		margin-top: 10px;
+  		font-size: 1.5rem;
+  	}
+
+	.coeur-effet:hover .fas 
+	{
+		opacity: 1;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	.coeur-effet:hover .far 
+	{
+  		opacity: 0;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	
+	.coeur-effets .fas /*coeur plein 3ème page*/
+	{
+  		color: transparent;
+  		background: linear-gradient(#ff79da, #9356dc);
+  		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
+  		opacity: 0;
+  		font-size: 1.5rem;
+  		margin-top: 10px;
+		padding-left: 175px;
+ 	}
+
+	.coeur-effets .far /*coeur vide*/
+	{
+  		margin-right: 70px;
+  		margin-top: 10px;
+
+  		font-size: 1.5rem;
+  	}
+
+	.coeur-effets:hover .fas 
+	{
+		opacity: 1;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	.coeur-effets:hover .far 
+	{
+  		opacity: 0;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
 
 	.element2 /*Les plats de la 2ème page*/
 	
@@ -1100,16 +1163,13 @@
 	{
   		margin-left: -27px;
   		font-size: 1.5rem;
-  		/*margin-left: -27px;*/
-  		/*margin-top: 20px;*/
-	}
+  	}
 
 	.coeur-effet:hover .fas 
 	{
 		opacity: 1;
   		transition: 1s;
   		cursor: pointer;
-
 	}
 
 	.coeur-effet:hover .far 
@@ -1118,9 +1178,7 @@
   		transition: 1s;
   		cursor: pointer;
   		/*margin-left: -27px;*/
-  		
-
-	}
+  	}
 
 
 	/*section footer*/
@@ -1255,12 +1313,37 @@
 		margin-left: 100px;
 	}
 
-	.far.fa-heart.restCard__icon--empty
+	.coeur-effet .fas /*coeur plein*/
 	{
-		margin-right: 20px;
-		font-size: 1.3rem;
+  		color: transparent;
+  		background: linear-gradient(#ff79da, #9356dc);
+  		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
+  		opacity: 0;
+  		font-size: 1.5rem;
+  		margin-left: 340px;
 		margin-top: 10px;
-	}
+ 	}
+
+	.coeur-effet .far /*coeur vide*/
+	{
+  		margin-right: 70px;
+  		margin-top: 10px;
+  		font-size: 1.5rem;
+  	}
+
+	.coeur-effet:hover .fas 
+	{
+		opacity: 1;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	.coeur-effet:hover .far 
+	{
+  		opacity: 0;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
 
 	.conteneur2/* concerne la 2ème page*/
 	
@@ -1875,36 +1958,38 @@
 		/*couleur noire*/
 	}
 
-	.far.fa-heart /* coeur transparent*/
-	
+	.coeur-effet .fas /*coeur plein*/
 	{
-		margin-right: 10px;
-		font-size: 1.3rem;
-		
+  		color: transparent;
+  		background: linear-gradient(#ff79da, #9356dc);
+  		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
+  		opacity: 0;
+  		font-size: 1.5rem;
+  		margin-left: -37px;
+  		margin-top: 30px;
+ 	}
+
+	.coeur-effet .far /*coeur vide*/
+	{
+  		margin-left: -27px;
+  		font-size: 1.5rem;
+  	}
+
+	.coeur-effet:hover .fas 
+	{
+		opacity: 1;
+  		transition: 1s;
+  		cursor: pointer;
 	}
 
-	.far.fa-heart:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
-	
+	.coeur-effet:hover .far 
 	{
-		color: #9356DC;
-		/*violet PROBLEME NE SE REMPLIT PAS EN VIOLET : far fa-heart*/
-		/*background-color: #9356DC;
-		*/
-		cursor: pointer;
-		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
-		/*transition: width 2s;
-		display: none all 2s;
-		*/
-	}
+  		opacity: 0;
+  		transition: 1s;
+  		cursor: pointer;
+  		/*margin-left: -27px;*/
+  	}
 
-	.fas.fa-heart:hover /*coeur remplit en violet*/
-	
-	{
-		color: #9356DC;
-		/*position: absolute;
-		*/
-		
-	}
 
 	/*section footer*/
 	footer
@@ -2010,12 +2095,20 @@
 		/*marges exterieures*/
 		position: absolute;
 		/*pour que le pavé à la française déborde sur la photo*/
-		/*align-items: center;
-		*/
-		/*margin-right: auto;
-		margin-left: auto;
-		*/
 		background-color: #F2F2F2;
+	}
+
+	.conteneur2/* concerne la 2ème page*/
+	
+	{
+		display: flex;
+		flex-direction: column;
+		color: #000000;	/*couleur noire*/
+		text-align: left;
+		width: 96%;
+		background-color: #F2F2F2;
+		border-top-right-radius: 25px;
+		border-top-left-radius: 25px;
 	}
 
 	.francaise
@@ -2031,26 +2124,40 @@
 		margin-left: 55px;
 	}
 
-	.far.fa-heart.restCard__icon--empty
+	.coeur-effet .fas /*coeur plein*/
 	{
-		margin-right: 30px;
-		font-size: 1.3rem;
-		margin-top: 10px;
-	}
+  		color: transparent;
+  		background: linear-gradient(#ff79da, #9356dc);
+  		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
+  		opacity: 0;
+  		font-size: 1.5rem;
+  		margin-left: 1470px;
 
-	.conteneur2/* concerne la 2ème page*/
-	
+		margin-top: 10px;
+ 	}
+
+	.coeur-effet .far /*coeur vide*/
 	{
-		display: flex;
-		flex-direction: column;
-		color: #000000;	/*couleur noire*/
-		text-align: left;
-		width: 96%;
-		background-color: #F2F2F2;
-		border-top-right-radius: 25px;
-		border-top-left-radius: 25px;
-		
-	}
+  		margin-right: 70px;
+  		margin-top: 10px;
+  		font-size: 1.5rem;
+  	}
+
+	.coeur-effet:hover .fas 
+	{
+		opacity: 1;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	.coeur-effet:hover .far 
+	{
+  		opacity: 0;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	
 
 	.element2 /*Les plats de la 2ème page*/
 	
