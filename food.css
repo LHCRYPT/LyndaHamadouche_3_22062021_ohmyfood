@@ -119,8 +119,7 @@
 	.searchbuttons:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
 	
 	{
-		color: #9356DC;
-		/*violet*/
+		color: white;
 		background-color: #F2F2F2;
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
@@ -475,9 +474,6 @@
 		margin-left: 55px;
 	}
 
-	
-
-
 	.coeur-effet .fas /*coeur plein*/
 	{
   		color: transparent;
@@ -519,7 +515,8 @@
   		opacity: 0;
   		font-size: 1.5rem;
   		margin-top: 10px;
-		padding-left: 175px;
+		/*padding-left: 215px;*/
+		/*padding-right: 20px;*/
  	}
 
 	.coeur-effets .far /*coeur vide*/
@@ -900,8 +897,7 @@
 	.searchbuttons:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
 	
 	{
-		color: #9356DC;
-		/*violet*/
+		color: white;
 		background-color: #F2F2F2;
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
@@ -922,11 +918,7 @@
 		display: flex;
 		justify-content: center;
 		margin-top: 20px;
-		/* marges exterieures haut */
-		margin-bottom: 40px;
-		/*margin-left: 15px;
-		margin-right: 20px;
-		*/
+		margin-bottom: 40px;/* marges exterieures bas*/
 		width: 100%;
 		background-color: white;
 	}
@@ -935,8 +927,6 @@
 	
 	{
 		display: flex;
-		/*justify-content: column;
-		*/
 		flex-wrap: wrap;
 		/*les éléments vont à la ligne lorsqu'il n'y a plus la place*/
 		margin-bottom: 10px;
@@ -1023,11 +1013,9 @@
 		/*primaire: violet*/
 		text-align: center;
 		/*pour centrer le chiffre*/
-		margin-left: 15px;
+		margin-left: 25px;
 		margin-top: 23px;
-		z-index: 2;
-		/*position: absolute;
-		/*pour que nouveau apparaisse sur l'image*/
+		z-index: 2;	/*pour que nouveau apparaisse sur l'image*/
 	}
 
 	/*section3 Restaurants*/
@@ -1723,8 +1711,7 @@
 	.searchbuttons:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
 	
 	{
-		color: #9356DC;
-		/*violet*/
+		color: white;
 		background-color: #F2F2F2;
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
