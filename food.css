@@ -474,37 +474,7 @@
 		margin-left: 55px;
 	}
 
-	.coeur-effet .fas /*coeur plein*/
-	{
-  		color: transparent;
-  		background: linear-gradient(#ff79da, #9356dc);
-  		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
-  		opacity: 0;
-  		font-size: 1.5rem;
-  		margin-left: 250px;
-		margin-top: 10px;
- 	}
-
-	.coeur-effet .far /*coeur vide*/
-	{
-  		margin-right: 70px;
-  		margin-top: 10px;
-  		font-size: 1.5rem;
-  	}
-
-	.coeur-effet:hover .fas 
-	{
-		opacity: 1;
-  		transition: 1s;
-  		cursor: pointer;
-  	}
-
-	.coeur-effet:hover .far 
-	{
-  		opacity: 0;
-  		transition: 1s;
-  		cursor: pointer;
-  	}
+	
 
 	
 	.coeur-effets .fas /*coeur plein 3ème page*/
@@ -1721,7 +1691,7 @@
 	.titre /*mot fonctionnement*/
 	
 	{
-		margin-left: 45px;
+		margin-left: 23px;
 		padding-bottom: 10px;
 	}
 
@@ -1896,8 +1866,6 @@
 		/*l'image sera découpée pour s'adapter*/
 		border-top-right-radius: 15px;
 		border-top-left-radius: 15px;
-		/* z-index: -1;
-		*/
 	}
 
 	.nouveau
@@ -1916,8 +1884,6 @@
 		margin-top: -160px;
 		margin-bottom: 120px;
 		margin-left: 320px;
-		/*z-index: 2;
-		/*pour QU'IL APPARAISSE DEVANT L'IMAGE*/
 		position: absolute;
 		/*pour que nouveau apparaisse sur l'image*/
 	}
@@ -1939,8 +1905,6 @@
 
 	.ville
 	{
-		/*padding-left: 30px;
-		/* concerne les marges interieures gauche */
 		color: #000000 !important;
 		/*couleur noire*/
 	}
@@ -1952,13 +1916,13 @@
   		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
   		opacity: 0;
   		font-size: 1.5rem;
-  		margin-left: -37px;
+  		margin-left: -50px;
   		margin-top: 30px;
  	}
 
 	.coeur-effet .far /*coeur vide*/
 	{
-  		margin-left: -27px;
+  		margin-left: -30px;
   		font-size: 1.5rem;
   	}
 
@@ -1974,7 +1938,6 @@
   		opacity: 0;
   		transition: 1s;
   		cursor: pointer;
-  		/*margin-left: -27px;*/
   	}
 
 
@@ -2105,39 +2068,39 @@
 		font-style:italic;
 		font-family: 'Shrikhand', cursive;
 		display: flex;
-		justify-content: space-between;
+		/*justify-content: space-between;*/
 		/*pour que le coeur se mette à droite*/
 		margin-top: 20px;
 		margin-left: 55px;
 	}
 
-	.coeur-effet .fas /*coeur plein*/
+.a-la-francaise .fas /*coeur plein LA NOTE ENCHANTEE*/
 	{
   		color: transparent;
   		background: linear-gradient(#ff79da, #9356dc);
   		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
   		opacity: 0;
   		font-size: 1.5rem;
-  		margin-left: 1470px;
+  		margin-left: 127px;
 
 		margin-top: 10px;
  	}
 
-	.coeur-effet .far /*coeur vide*/
+	.a-la-francaise .far /*coeur vide*/
 	{
-  		margin-right: 70px;
+  		margin-left: -27px;
   		margin-top: 10px;
   		font-size: 1.5rem;
   	}
 
-	.coeur-effet:hover .fas 
+	.a-la-francaise:hover .fas 
 	{
 		opacity: 1;
   		transition: 1s;
   		cursor: pointer;
   	}
 
-	.coeur-effet:hover .far 
+	.a-la-francaise:hover .far 
 	{
   		opacity: 0;
   		transition: 1s;
@@ -2145,6 +2108,7 @@
   	}
 
 	
+
 
 	.element2 /*Les plats de la 2ème page*/
 	
