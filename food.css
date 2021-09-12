@@ -475,7 +475,7 @@
 	}
 
 	
-	.a-la-francaise .fas /*coeur plein A la Française 2ème et 5ème page*/
+	.a-la-francaise .fas /*coeur plein A la Française 2ème */
 	{
   		color: transparent;
   		background: linear-gradient(#ff79da, #9356dc);
@@ -568,6 +568,39 @@
   	}
 
 	.la-palette:hover .far 
+	{
+  		opacity: 0;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	.le-delice .fas /*coeur plein Le délice des sens 5ème page*/
+	{
+  		color: transparent;
+  		background: linear-gradient(#ff79da, #9356dc);
+  		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
+  		opacity: 0;
+  		font-size: 1.5rem;
+  		margin-left: 150px;
+		margin-top: 10px;
+ 	}
+
+	.le-delice .far /*coeur vide*/
+	{
+  		margin-left: -37px;
+  		margin-right: 95px;
+  		margin-top: 10px;
+  		font-size: 1.5rem;
+  	}
+
+	.le-delice:hover .fas 
+	{
+		opacity: 1;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	.le-delice:hover .far 
 	{
   		opacity: 0;
   		transition: 1s;
