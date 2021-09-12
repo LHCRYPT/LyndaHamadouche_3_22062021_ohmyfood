@@ -2074,7 +2074,7 @@
 		margin-left: 55px;
 	}
 
-.a-la-francaise .fas /*coeur plein A la Française*/
+.a-la-francaise .fas /*coeur plein A la Française 2ème page*/
 	{
   		color: transparent;
   		background: linear-gradient(#ff79da, #9356dc);
@@ -2108,7 +2108,7 @@
   	}
 
 	
-.la-note .fas /*coeur plein LA NOTE ENCHANTEE*/
+.la-note .fas /*coeur plein LA NOTE ENCHANTEE 3ème page*/
 	{
   		color: transparent;
   		background: linear-gradient(#ff79da, #9356dc);
@@ -2140,6 +2140,40 @@
   		transition: 1s;
   		cursor: pointer;
   	}
+
+.la-palette .fas /*coeur plein La palette du goût 4ème page*/
+	{
+  		color: transparent;
+  		background: linear-gradient(#ff79da, #9356dc);
+  		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
+  		opacity: 0;
+  		font-size: 1.5rem;
+  		margin-left: 980px;
+
+		margin-top: 10px;
+ 	}
+
+	.la-palette .far /*coeur vide*/
+	{
+  		margin-left: -27px;
+  		margin-top: 10px;
+  		font-size: 1.5rem;
+  	}
+
+	.la-palette:hover .fas 
+	{
+		opacity: 1;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	.la-palette:hover .far 
+	{
+  		opacity: 0;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
 
 	.element2 /*Les plats de la 2ème page*/
 	
