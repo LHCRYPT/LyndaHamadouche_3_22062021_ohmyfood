@@ -1474,14 +1474,14 @@
   		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
   		opacity: 0;
   		font-size: 1.5rem;
-  		margin-left: 150px;
+  		margin-left: 270px;
 		margin-top: 10px;
  	}
 
 	.le-delice .far /*coeur vide*/
 	{
   		margin-left: -37px;
-  		margin-right: 95px;
+  		margin-right: 85px;
   		margin-top: 10px;
   		font-size: 1.5rem;
   	}
