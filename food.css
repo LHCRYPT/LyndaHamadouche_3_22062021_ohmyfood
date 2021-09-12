@@ -516,7 +516,6 @@
   		opacity: 0;
   		font-size: 1.5rem;
   		margin-left: 150px;
-
 		margin-top: 10px;
  	}
 
@@ -549,15 +548,14 @@
   		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
   		opacity: 0;
   		font-size: 1.5rem;
-  		margin-left: 190px;
-
+  		margin-left: 150px;
 		margin-top: 10px;
  	}
 
 	.la-palette .far /*coeur vide*/
 	{
-  		margin-left: -27px;
-  		margin-right: 100px;
+  		margin-left: -37px;
+  		margin-right: 85px;
   		margin-top: 10px;
   		font-size: 1.5rem;
   	}
