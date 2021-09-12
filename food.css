@@ -2074,7 +2074,7 @@
 		margin-left: 55px;
 	}
 
-.a-la-francaise .fas /*coeur plein A la Française 2ème page*/
+	.a-la-francaise .fas /*coeur plein A la Française 2ème et 5ème page*/
 	{
   		color: transparent;
   		background: linear-gradient(#ff79da, #9356dc);
@@ -2108,7 +2108,7 @@
   	}
 
 	
-.la-note .fas /*coeur plein LA NOTE ENCHANTEE 3ème page*/
+	.la-note .fas /*coeur plein LA NOTE ENCHANTEE 3ème page*/
 	{
   		color: transparent;
   		background: linear-gradient(#ff79da, #9356dc);
@@ -2141,7 +2141,7 @@
   		cursor: pointer;
   	}
 
-.la-palette .fas /*coeur plein La palette du goût 4ème page*/
+	.la-palette .fas /*coeur plein La palette du goût 4ème page*/
 	{
   		color: transparent;
   		background: linear-gradient(#ff79da, #9356dc);
