@@ -508,7 +508,39 @@
   		cursor: pointer;
   	}
 	
-	
+	.la-note .fas /*coeur plein LA NOTE ENCHANTEE 3ème page*/
+	{
+  		color: transparent;
+  		background: linear-gradient(#ff79da, #9356dc);
+  		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
+  		opacity: 0;
+  		font-size: 1.5rem;
+  		margin-left: 190px;
+
+		margin-top: 10px;
+ 	}
+
+	.la-note .far /*coeur vide*/
+	{
+  		margin-left: -27px;
+  		margin-right: 100px;
+  		margin-top: 10px;
+  		font-size: 1.5rem;
+  	}
+
+	.la-note:hover .fas 
+	{
+		opacity: 1;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	.la-note:hover .far 
+	{
+  		opacity: 0;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
 
 
 	.element2 /*Les plats de la 2ème page*/
@@ -2073,7 +2105,7 @@
 		margin-left: 55px;
 	}
 
-	.a-la-francaise .fas /*coeur plein A la Française 2ème et 5ème page*/
+	.a-la-francaise .fas /*coeur plein A la Française 2ème */
 	{
   		color: transparent;
   		background: linear-gradient(#ff79da, #9356dc);
@@ -2167,6 +2199,39 @@
   	}
 
 	.la-palette:hover .far 
+	{
+  		opacity: 0;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	.le-delice .fas /*coeur plein Le délice des sens 5ème page*/
+	{
+  		color: transparent;
+  		background: linear-gradient(#ff79da, #9356dc);
+  		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
+  		opacity: 0;
+  		font-size: 1.5rem;
+  		margin-left: 980px;
+
+		margin-top: 10px;
+ 	}
+
+	.le-delice .far /*coeur vide*/
+	{
+  		margin-left: -27px;
+  		margin-top: 10px;
+  		font-size: 1.5rem;
+  	}
+
+	.le-delice:hover .fas 
+	{
+		opacity: 1;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	.le-delice:hover .far 
 	{
   		opacity: 0;
   		transition: 1s;
