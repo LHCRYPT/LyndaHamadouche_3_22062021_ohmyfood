@@ -475,41 +475,40 @@
 	}
 
 	
-
-	
-	.coeur-effets .fas /*coeur plein 3ème page*/
+	.a-la-francaise .fas /*coeur plein A la Française 2ème et 5ème page*/
 	{
   		color: transparent;
   		background: linear-gradient(#ff79da, #9356dc);
   		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
   		opacity: 0;
   		font-size: 1.5rem;
-  		margin-top: 10px;
-		/*padding-left: 215px;*/
-		/*padding-right: 20px;*/
+  		margin-left: 220px;
+		margin-top: 10px;
  	}
 
-	.coeur-effets .far /*coeur vide*/
+	.a-la-francaise .far /*coeur vide*/
 	{
-  		margin-right: 70px;
+  		margin-left: -37px;
+  		margin-right: 90px;
   		margin-top: 10px;
-
   		font-size: 1.5rem;
   	}
 
-	.coeur-effets:hover .fas 
+	.a-la-francaise:hover .fas 
 	{
 		opacity: 1;
   		transition: 1s;
   		cursor: pointer;
   	}
 
-	.coeur-effets:hover .far 
+	.a-la-francaise:hover .far 
 	{
   		opacity: 0;
   		transition: 1s;
   		cursor: pointer;
   	}
+	
+	
 
 
 	.element2 /*Les plats de la 2ème page*/
@@ -2176,7 +2175,6 @@
 
 
 	.element2 /*Les plats de la 2ème page*/
-	
 	{
 		display: flex;
 		box-shadow: 0px 8px 12px #aaa;
