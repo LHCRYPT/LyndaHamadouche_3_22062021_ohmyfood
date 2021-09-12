@@ -1292,6 +1292,7 @@
 	}
 
 	/*2ème page TABLETTE*/
+
 	/*header*/
 	header/*logo */
 	
@@ -1367,32 +1368,132 @@
 		margin-left: 100px;
 	}
 
-	.coeur-effet .fas /*coeur plein*/
+	.a-la-francaise .fas /*coeur plein A la Française 2ème */
 	{
   		color: transparent;
   		background: linear-gradient(#ff79da, #9356dc);
   		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
   		opacity: 0;
   		font-size: 1.5rem;
-  		margin-left: 340px;
+  		margin-left: 320px;
 		margin-top: 10px;
  	}
 
-	.coeur-effet .far /*coeur vide*/
+	.a-la-francaise .far /*coeur vide*/
 	{
-  		margin-right: 70px;
+  		margin-left: -37px;
+  		margin-right: 80px;
   		margin-top: 10px;
   		font-size: 1.5rem;
   	}
 
-	.coeur-effet:hover .fas 
+	.a-la-francaise:hover .fas 
 	{
 		opacity: 1;
   		transition: 1s;
   		cursor: pointer;
   	}
 
-	.coeur-effet:hover .far 
+	.a-la-francaise:hover .far 
+	{
+  		opacity: 0;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+	
+	.la-note .fas /*coeur plein LA NOTE ENCHANTEE 3ème page*/
+	{
+  		color: transparent;
+  		background: linear-gradient(#ff79da, #9356dc);
+  		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
+  		opacity: 0;
+  		font-size: 1.5rem;
+  		margin-left: 150px;
+		margin-top: 10px;
+ 	}
+
+	.la-note .far /*coeur vide*/
+	{
+  		margin-left: -37px;
+  		margin-right: 70px;
+  		margin-top: 10px;
+  		font-size: 1.5rem;
+  	}
+
+	.la-note:hover .fas 
+	{
+		opacity: 1;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	.la-note:hover .far 
+	{
+  		opacity: 0;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	.la-palette .fas /*coeur plein La palette du goût 4ème page*/
+	{
+  		color: transparent;
+  		background: linear-gradient(#ff79da, #9356dc);
+  		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
+  		opacity: 0;
+  		font-size: 1.5rem;
+  		margin-left: 150px;
+		margin-top: 10px;
+ 	}
+
+	.la-palette .far /*coeur vide*/
+	{
+  		margin-left: -37px;
+  		margin-right: 85px;
+  		margin-top: 10px;
+  		font-size: 1.5rem;
+  	}
+
+	.la-palette:hover .fas 
+	{
+		opacity: 1;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	.la-palette:hover .far 
+	{
+  		opacity: 0;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	.le-delice .fas /*coeur plein Le délice des sens 5ème page*/
+	{
+  		color: transparent;
+  		background: linear-gradient(#ff79da, #9356dc);
+  		-webkit-background-clip: text; /*permets que la couleur violette remplisse juste le coeur sinon c'est un rectangle violet qui apparait*/
+  		opacity: 0;
+  		font-size: 1.5rem;
+  		margin-left: 150px;
+		margin-top: 10px;
+ 	}
+
+	.le-delice .far /*coeur vide*/
+	{
+  		margin-left: -37px;
+  		margin-right: 95px;
+  		margin-top: 10px;
+  		font-size: 1.5rem;
+  	}
+
+	.le-delice:hover .fas 
+	{
+		opacity: 1;
+  		transition: 1s;
+  		cursor: pointer;
+  	}
+
+	.le-delice:hover .far 
 	{
   		opacity: 0;
   		transition: 1s;
