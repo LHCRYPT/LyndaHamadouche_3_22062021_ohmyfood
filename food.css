@@ -1,5 +1,5 @@
 
-/*Medium devices (mobile)si la largeur de l'appareil est inférieure ou égale à 768px, appliquez le CSS défini dans ce bloc*/
+/*Medium devices (mobile)si la largeur de l'appareil est inférieure ou égale à 767px, appliquez le CSS défini dans ce bloc*/
 @media only screen and (max-width:767px)
 {
 	body 
@@ -835,7 +835,7 @@
 
 
 
-/* Medium devices (tablette, min 768px max 1024px )si la largeur de l'appareil est inférieure ou égale à 1000px, appliquez le CSS défini dans ce bloc */
+/* Medium devices (tablette, min 768px max 1030px )si la largeur de l'appareil est minimum à 768px et égale ou inférieur à 1030px, appliquez le CSS défini dans ce bloc */
 @media only screen and (min-width:768px) and (max-width: 1030px)
 {
 	body /*pour que l'ordi ne mette pas une marge en plus sur toute la page*/
@@ -1756,7 +1756,7 @@
 }
 
 /*concerne pc*/
-@media only screen and (min-width: 1031px) /*à partir de 1025px*/
+@media only screen and (min-width: 1031px) /*à partir de 1031px*/
 
 {
 	body /*pour que l'ordi ne mette pas une marge en plus sur toute la page*/
