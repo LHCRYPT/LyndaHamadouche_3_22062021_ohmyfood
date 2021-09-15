@@ -1,5 +1,5 @@
 
-/*Medium devices (mobile/tablette, 576px and up)si la largeur de l'appareil est inférieure ou égale à 768px, appliquez le CSS défini dans ce bloc*/
+/*Medium devices (mobile)si la largeur de l'appareil est inférieure ou égale à 768px, appliquez le CSS défini dans ce bloc*/
 @media only screen and (max-width:767px)
 {
 	body 
@@ -32,8 +32,6 @@
 		background-color: #CECECE;
 		/* Gris Perle*/
 		width: 110%;
-		/*box-shadow: 0px 8px 32px blue;
-		/* La 1ère valeur indique le décalage horizontal vers la droite -la 2ème correspond au décalage verticalvers le bas-le chiffre suivant indique la force du dégradé */
 		border-top: solid 4px #9E9E9E;
 		/*trait foncé au dessus de Paris Belleville*/
 	}
@@ -122,7 +120,7 @@
 	}
 
 	/* Section 2*/
-	
+
 	.titre /*mot fonctionnement*/
 	
 	{
@@ -320,14 +318,16 @@
 	{
   		color: transparent;
   		background: linear-gradient(#ff79da, #9356dc);
-  		-webkit-background-clip: text;
-  		opacity: 0;
+  		-webkit-background-clip: text; /*pour que la couleur remplisse juste le coeur*/
+  		opacity: 0; /*pour qu'il n'apparait pas*/
   		font-size: 1.5rem;
+  		margin-left: -52px;
+  		/*margin-top: 10px;*/
  	}
 
 	.coeur-effet .far 
 	{
-  		margin-left: -27px;
+  		margin-left: -28px;
   		font-size: 1.5rem;
 	}
 
@@ -2440,7 +2440,7 @@
 		}
 	}
 
-	.element2:hover .check /*carré vert qui tourne quand on lique sur le prix*/
+	.element2:hover .check /*carré vert qui s'agrandi quand on clique sur le prix*/
 	
 	{
 		width: 70px;
@@ -2463,9 +2463,9 @@
 		padding-left: 20px;
 	}
 
-	.check i /*rond*/
+	.check i /*rond au départ */
 	{
-		display: none;
+		display: none; /* icone pas visible*/
 		margin-left: 10px;
 		border: solid 2px none;
 		border-radius: 80%;
@@ -2474,7 +2474,7 @@
 		margin-right: 30px;
 	}
 
-	.element2:hover i
+	.element2:hover i /* rond apparait*/
 	{
 		display: block;
 		animation: all 0.5s;
