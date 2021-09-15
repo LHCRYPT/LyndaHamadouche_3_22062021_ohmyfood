@@ -2,15 +2,13 @@
 /*Medium devices (mobile/tablette, 576px and up)si la largeur de l'appareil est inférieure ou égale à 768px, appliquez le CSS défini dans ce bloc*/
 @media only screen and (max-width:767px)
 {
-	body /*pour que l'ordi ne mette pas une marge en plus sur toute la page*/
-	
+	body 
 	{
-		margin: 0;
+		margin: 0; /*pour que l'ordi ne mette pas une marge en plus sur toute la page*/
 		font-family: 'Roboto', sans-serif;
 	}
 
 	.header-mobile/*logo */
-	
 	{
 		display: flex;
 		justify-content: center;
@@ -41,7 +39,6 @@
 	}
 
 	.fas.fa-map-marker-alt /*icone recherche*/
-	
 	{
 		border: none;
 		padding: 15px;
@@ -49,7 +46,6 @@
 	}
 
 	input  /* Paris, Belleville*/
-	
 	{
 		border: none;
 		width: 200px;
@@ -126,6 +122,7 @@
 	}
 
 	/* Section 2*/
+	
 	.titre /*mot fonctionnement*/
 	
 	{
