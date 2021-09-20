@@ -97,7 +97,7 @@
 	{
 		font-size: 1rem;
 		color: white;
-		border: solid 2px #F2F2F2;
+		border: solid 2px none;/* pas de couleur pour le contour*/
 		border-radius: 25px;
 		height: 3rem;
 		width: 15rem;
@@ -108,6 +108,8 @@
 		background:linear-gradient(#ff79da, #9356dc);
 		/*dégradé linéaire couleur Héliotrope-Bleu persan */
 		font-weight: bold;
+		box-shadow: 0px 3px #aaa;
+
 	}
 
 	.searchbuttons:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -117,6 +119,7 @@
 		background-color: #F2F2F2;
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
+		box-shadow: 0px 6px #aaa;
 	}
 
 	/* Section 2*/
@@ -159,6 +162,7 @@
 		margin-top: 10px;
 		padding-right: 30px;
 		/*pour agrandir le cadre*/
+		font-weight: bold;
 	}
 
 	.contour /* contour les mots restaurant menu dégustez*/
@@ -178,10 +182,17 @@
 	.contour:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
 	
 	{
-		color: #0065FC;
-		background-color: #F2F2F2;
+		color: black;
+		background-color: #FF79DA; 
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
+	}
+
+	.fas.fa-mobile-alt:hover
+	{
+		color: red;
+		cursor: pointer;
+		
 	}
 
 	.fas.fa-mobile-alt /* icone restaurant*/
@@ -798,7 +809,7 @@
 	
 	{
 		color: white;
-		border: solid 2px #F2F2F2;
+		border: solid 2px none;
 		border-radius: 25px;
 		height: 3rem;
 		width: 12rem;
@@ -809,15 +820,17 @@
 		background:linear-gradient(to bottom,#DF73FF 45%,#6600FF);
 		/*dégradé linéaire couleur Héliotrope-Bleu persan */
 		font-weight: bold;
+		box-shadow: 0px 3px #aaa;
 	}
 
 	.searchbutton:hover  /* une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
 	
 	{
-		color: #0065FC;
+		color: white;
 		background-color: #F2F2F2;
 		cursor: pointer;
 		/* définit la forme du curseur lorsque le pointeur est au-dessus de l'element, Le curseur est un pointeurqui indique un lien,generalement c'est une main. */
+		box-shadow: 0px 6px #aaa;
 	}
 
 	/*section footer*/
@@ -944,7 +957,7 @@
 	{
 		font-size: 1.2rem;
 		color: white;
-		border: solid 2px #F2F2F2;
+		border: solid 2px none; /* pas de couleur pour le contour*/
 		border-radius: 25px;
 		height: 3rem;
 		width: 18rem;
@@ -955,6 +968,7 @@
 		background:linear-gradient(to bottom,#DF73FF 45%,#6600FF);
 		/*dégradé linéaire couleur Héliotrope-Bleu persan */
 		font-weight: bold;
+		box-shadow: 0px 3px #aaa;
 	}
 
 	.searchbuttons:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -964,6 +978,7 @@
 		background-color: #F2F2F2;
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
+		box-shadow: 0px 6px #aaa;
 	}
 
 	/* Section 2*/
@@ -1723,7 +1738,7 @@
 	
 	{
 		color: white;
-		border: solid 2px #F2F2F2;
+		border: solid 2px none;
 		border-radius: 25px;
 		height: 3rem;
 		width: 12rem;
@@ -1734,15 +1749,17 @@
 		background:linear-gradient(to bottom,#DF73FF 45%,#6600FF);
 		/*dégradé linéaire couleur Héliotrope-Bleu persan */
 		font-weight: bold;
+		box-shadow: 0px 3px #aaa;
 	}
 
 	.searchbutton:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
 	
 	{
-		color: #0065FC;
+		color: white;
 		background-color: #F2F2F2;
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main*/
+		box-shadow: 0px 6px #aaa;
 	}
 
 /*section footer*/
@@ -1859,7 +1876,7 @@
 	{
 		font-size: 1rem;
 		color: white;
-		border: solid 2px #F2F2F2;
+		border: solid 2px none; /* pas de couleur pour le contour*/
 		border-radius: 25px;
 		height: 3rem;
 		width: 15rem;
@@ -1870,6 +1887,7 @@
 		background:linear-gradient(to bottom,#DF73FF 45%,#6600FF);
 		/*dégradé linéaire couleur Héliotrope-Bleu persan */
 		font-weight: bold;
+		box-shadow: 0px 3px #aaa;
 	}
 
 	.searchbuttons:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -1879,6 +1897,7 @@
 		background-color: #F2F2F2;
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
+		box-shadow: 0px 6px #aaa;
 	}
 
 	/* Section 2*/
@@ -2613,7 +2632,7 @@
 	
 	{
 		color: white;
-		border: solid 2px #F2F2F2;
+		border: solid 2px none;
 		border-radius: 25px;
 		height: 3rem;
 		width: 12rem;
@@ -2624,15 +2643,17 @@
 		background:linear-gradient(to bottom,#DF73FF 45%,#6600FF);
 		/*dégradé linéaire couleur Héliotrope-Bleu persan */
 		font-weight: bold;
+		box-shadow: 0px 3px #aaa;
 	}
 
 	.searchbutton:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
 	
 	{
-		color: #0065FC;
+		color: white;
 		background-color: #F2F2F2;
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main*/
+		box-shadow: 0px 6px #aaa;
 	}
 
 	/*section footer*/
