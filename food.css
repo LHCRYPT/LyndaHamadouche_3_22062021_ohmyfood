@@ -114,6 +114,7 @@
 		/*dégradé linéaire couleur Héliotrope-Bleu persan */
 		font-weight: bold;
 		box-shadow: 0px 3px #aaa;
+		opacity: 1;
 
 	}
 
@@ -122,9 +123,10 @@
 	{
 		color: white;
 		background-color: #F2F2F2;
+		box-shadow: 7px 6px 27px 0px rgba(0,0,0,0.75);
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
-		box-shadow: 0px 6px #aaa;
+		opacity: 0.7;
 	}
 
 	/* Section 2*/
@@ -258,6 +260,15 @@
 	}
 
 
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
 	.loader {
   		border: 14px solid #FF79DA ;
   		border-radius: 50%;
@@ -268,19 +279,24 @@
   		top: 35%;
   		width: 120px;
   		height: 120px;
-  		-webkit-animation: spin 2s linear ;
   		animation: spin 2s linear ;
+  		z-index: -1;
 	}
 
-	@-webkit-keyframes spin {
- 		 0% { -webkit-transform: rotate(0deg); }
-  		100% { -webkit-transform: rotate(360deg); }
-	}
-
+	
 	@keyframes spin {
   		0% { transform: rotate(0deg); }
-  		100% { transform: rotate(360deg); }
+  		100% { transform: rotate(360deg);}
+  		 
 	}
+
+
+body .page
+{
+	
+	animation: fadein 3s;
+}
+
 
 
 	/*section3 Restaurants*/
@@ -754,6 +770,8 @@
 		margin-right: 0px;
 	}
 
+
+
 	.ent /*pour pouvoir centrer le trait sous le mot entrée*/
 	
 	{
@@ -826,8 +844,10 @@
 		font-size: 1rem;
 		display: flex;
 		justify-content: space-between;	/*pour que le coeur se mette à droite*/
+		text-overflow: ellipsis;
 	}
 
+	
 	.prix
 	{
 		color: #000000;	/*couleur noire*/
@@ -864,6 +884,7 @@
 		/*dégradé linéaire couleur Héliotrope-Bleu persan */
 		font-weight: bold;
 		box-shadow: 0px 3px #aaa;
+		opacity: 1;
 	}
 
 	.searchbutton:hover  /* une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -871,9 +892,10 @@
 	{
 		color: white;
 		background-color: #F2F2F2;
+		box-shadow: 7px 6px 27px 0px rgba(0,0,0,0.75);
 		cursor: pointer;
 		/* définit la forme du curseur lorsque le pointeur est au-dessus de l'element, Le curseur est un pointeurqui indique un lien,generalement c'est une main. */
-		box-shadow: 0px 6px #aaa;
+		opacity: 0.7;
 	}
 
 	/*section footer*/
@@ -1012,6 +1034,7 @@
 		/*dégradé linéaire couleur Héliotrope-Bleu persan */
 		font-weight: bold;
 		box-shadow: 0px 3px #aaa;
+		opacity: 1;
 	}
 
 	.searchbuttons:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -1019,9 +1042,10 @@
 	{
 		color: white;
 		background-color: #F2F2F2;
+		box-shadow: 7px 6px 27px 0px rgba(0,0,0,0.75);
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
-		box-shadow: 0px 6px #aaa;
+		opacity: 0.7;
 	}
 
 	/* Section 2*/
@@ -1153,6 +1177,14 @@
 		z-index: 2;	/*pour que nouveau apparaisse sur l'image*/
 	}
 
+	@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
 	.loader {
   		border: 14px solid #FF79DA ;
   		border-radius: 50%;
@@ -1160,21 +1192,26 @@
   		border-bottom: 14px solid #99E2D0;
   		position: absolute;
   		left: 40%; /*pour centrer le loader*/
-  		width: 130px;
-  		height: 130px;
-  		-webkit-animation: spin 2s linear ;
+  		top: 45%;
+  		width: 120px;
+  		height: 120px;
   		animation: spin 2s linear ;
+  		z-index: -1;
 	}
 
-	@-webkit-keyframes spin {
-  		0% { -webkit-transform: rotate(0deg); }
-  		100% { -webkit-transform: rotate(360deg); }
-	}
-
+	
 	@keyframes spin {
   		0% { transform: rotate(0deg); }
-  		100% { transform: rotate(360deg); }
+  		100% { transform: rotate(360deg);}
+  		 
 	}
+
+
+body .page
+{
+	
+	animation: fadein 3s;
+}
 
 	/*section3 Restaurants*/
 	.activites /*mot restaurants*/
@@ -1830,6 +1867,7 @@
 		/*dégradé linéaire couleur Héliotrope-Bleu persan */
 		font-weight: bold;
 		box-shadow: 0px 3px #aaa;
+		opacity: 1;
 	}
 
 	.searchbutton:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -1837,9 +1875,10 @@
 	{
 		color: white;
 		background-color: #F2F2F2;
+		box-shadow: 7px 6px 27px 0px rgba(0,0,0,0.75);
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main*/
-		box-shadow: 0px 6px #aaa;
+		opacity: 0.7;
 	}
 
 /*section footer*/
@@ -1968,6 +2007,7 @@
 		/*dégradé linéaire couleur Héliotrope-Bleu persan */
 		font-weight: bold;
 		box-shadow: 0px 3px #aaa;
+		opacity: 1;
 	}
 
 	.searchbuttons:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -1975,9 +2015,10 @@
 	{
 		color: white;
 		background-color: #F2F2F2;
+		box-shadow: 7px 6px 27px 0px rgba(0,0,0,0.75);
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
-		box-shadow: 0px 6px #aaa;
+		opacity: 0.7;
 	}
 
 	/* Section 2*/
@@ -2107,6 +2148,14 @@
 		/*pour que nouveau apparaisse sur l'image*/
 	}
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
 	.loader {
   		border: 14px solid #FF79DA ;
   		border-radius: 50%;
@@ -2114,22 +2163,28 @@
   		border-bottom: 14px solid #99E2D0;
   		position: absolute;
   		left: 46%; /*pour centrer le loader*/
-  		top: 32%;
-  		width: 130px;
-  		height: 130px;
-  		-webkit-animation: spin 2s linear ;
+  		top: 20%;
+  		width: 120px;
+  		height: 120px;
   		animation: spin 2s linear ;
+  		z-index: -1;
 	}
 
-	@-webkit-keyframes spin {
-  		0% { -webkit-transform: rotate(0deg); }
-  		100% { -webkit-transform: rotate(360deg); }
-	}
-
+	
 	@keyframes spin {
   		0% { transform: rotate(0deg); }
-  		100% { transform: rotate(360deg); }
+  		100% { transform: rotate(360deg);}
+  		 
 	}
+
+
+body .page
+{
+	
+	animation: fadein 3s;
+}
+
+
 
 	/*section3 Restaurants*/
 	.activites /*mot restaurants*/
@@ -2762,6 +2817,7 @@
 		/*dégradé linéaire couleur Héliotrope-Bleu persan */
 		font-weight: bold;
 		box-shadow: 0px 3px #aaa;
+		opacity: 1;
 	}
 
 	.searchbutton:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
@@ -2769,9 +2825,10 @@
 	{
 		color: white;
 		background-color: #F2F2F2;
+		box-shadow: 7px 6px 27px 0px rgba(0,0,0,0.75);
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main*/
-		box-shadow: 0px 6px #aaa;
+		opacity: 0.7;
 	}
 
 	/*section footer*/
