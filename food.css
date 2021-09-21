@@ -2,11 +2,16 @@
 /*Medium devices (mobile)si la largeur de l'appareil est inférieure ou égale à 767px, appliquez le CSS défini dans ce bloc*/
 @media only screen and (max-width:767px)
 {
+	
+
+
 	body 
 	{
 		margin: 0; /*pour que l'ordi ne mette pas une marge en plus sur toute la page*/
 		font-family: 'Roboto', sans-serif;
 	}
+
+
 
 	.header-mobile/*logo */
 	{
@@ -183,7 +188,7 @@
 	
 	{
 		color: black;
-		background-color: #FF79DA; 
+		background-color: #F9F0FF; 
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
 	}
@@ -251,6 +256,32 @@
 		margin-top: 7px;
 		z-index: 2;
 	}
+
+
+	.loader {
+  		border: 14px solid #FF79DA ;
+  		border-radius: 50%;
+  		border-top: 14px solid #9356DC ;
+  		border-bottom: 14px solid #99E2D0;
+  		position: absolute;
+  		left: 35%; /*pour centrer le loader*/
+  		top: 35%;
+  		width: 120px;
+  		height: 120px;
+  		-webkit-animation: spin 2s linear ;
+  		animation: spin 2s linear ;
+	}
+
+	@-webkit-keyframes spin {
+ 		 0% { -webkit-transform: rotate(0deg); }
+  		100% { -webkit-transform: rotate(360deg); }
+	}
+
+	@keyframes spin {
+  		0% { transform: rotate(0deg); }
+  		100% { transform: rotate(360deg); }
+	}
+
 
 	/*section3 Restaurants*/
 	.central
@@ -1055,7 +1086,7 @@
 	.contour:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
 	{
 		color: black;
-		background-color: #FF79DA; 
+		background-color: #F9F0FF; 
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
 	}
@@ -1120,6 +1151,29 @@
 		margin-left: 25px;
 		margin-top: 23px;
 		z-index: 2;	/*pour que nouveau apparaisse sur l'image*/
+	}
+
+	.loader {
+  		border: 14px solid #FF79DA ;
+  		border-radius: 50%;
+  		border-top: 14px solid #9356DC ;
+  		border-bottom: 14px solid #99E2D0;
+  		position: absolute;
+  		left: 40%; /*pour centrer le loader*/
+  		width: 130px;
+  		height: 130px;
+  		-webkit-animation: spin 2s linear ;
+  		animation: spin 2s linear ;
+	}
+
+	@-webkit-keyframes spin {
+  		0% { -webkit-transform: rotate(0deg); }
+  		100% { -webkit-transform: rotate(360deg); }
+	}
+
+	@keyframes spin {
+  		0% { transform: rotate(0deg); }
+  		100% { transform: rotate(360deg); }
 	}
 
 	/*section3 Restaurants*/
@@ -1985,7 +2039,7 @@
 	.contour:hover  /*une couleur se met dès qu'on survol le mot à l'interieur de l'encadrement, un encadrement de couleur grise apparait */
 	{
 		color: black;
-		background-color: #FF79DA;
+		background-color: #F9F0FF;
 		cursor: pointer;
 		/*définit la forme du curseur lorsque le pointeur est au-dessus de l'élément, Le curseur est un pointeurqui indique un lien,généralement c'est une main.*/
 	}
@@ -2051,6 +2105,30 @@
 		z-index: 2;
 		/*position: absolute;
 		/*pour que nouveau apparaisse sur l'image*/
+	}
+
+	.loader {
+  		border: 14px solid #FF79DA ;
+  		border-radius: 50%;
+  		border-top: 14px solid #9356DC ;
+  		border-bottom: 14px solid #99E2D0;
+  		position: absolute;
+  		left: 46%; /*pour centrer le loader*/
+  		top: 32%;
+  		width: 130px;
+  		height: 130px;
+  		-webkit-animation: spin 2s linear ;
+  		animation: spin 2s linear ;
+	}
+
+	@-webkit-keyframes spin {
+  		0% { -webkit-transform: rotate(0deg); }
+  		100% { -webkit-transform: rotate(360deg); }
+	}
+
+	@keyframes spin {
+  		0% { transform: rotate(0deg); }
+  		100% { transform: rotate(360deg); }
 	}
 
 	/*section3 Restaurants*/
