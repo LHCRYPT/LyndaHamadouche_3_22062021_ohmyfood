@@ -845,6 +845,8 @@ body .page
 		display: flex;
 		justify-content: space-between;	/*pour que le coeur se mette à droite*/
 		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 
 	
